@@ -28,7 +28,7 @@ function initIframeChange() {
 	var iframe = jQuery('#content iframe');
 	jQuery('#region').on('change', function(){
     url = window.base_url + 'project=' + jQuery(this).val();
-    console.log(url)
+    
 		iframe.attr('src', url);
 	});
 
