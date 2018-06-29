@@ -10,7 +10,9 @@ jQuery(function() {
 	initIframeChange();
 });
 
-window.base_url = 'https://mx.app.fxi.io/?lockProject=true&'
+window.base_url = 'https://mx.app.fxi.io/?lockProject=true&';
+window.country = 'MX-XNI-RMZ-KKL-FMS-DVH'
+window.themes = [];
 
 function initOpenLighbox() {
 	var elem = jQuery('#popup-on-load');
@@ -26,26 +28,47 @@ function initOpenLighbox() {
 
 function initIframeChange() {
 	var iframe = jQuery('#content iframe');
-	jQuery('#region').on('change', function(){
-    current_url = iframe.attr('src');
-    themes = iframe.attr('src').split('collection')[1]
-    url = window.base_url + 'project=' + jQuery(this).val();
 
-    if(themes !== undefined){
-      url += themes
+	jQuery('#region').on('change', function(){
+		window.country = jQuery(this).val();
+    current_url = iframe.attr('src');
+    url = window.base_url + 'project=' + window.country;
+
+    if(window.themes.length > 0) {
+      url += '&collection=' + window.themes;
     }
 
 		iframe.attr('src', url);
 	});
 
 
-	jQuery('.info-list .switch').each(function(){
-		var switcher = jQuery(this);
+	jQuery('.info-list .switch').on('click', function(e){
+		e.preventDefault();
+		toggle = jQuery(this);
+		theme = toggle.attr('data-theme');
+		selected = toggle.attr('data-selected');
 
-		switcher.on('click', function(e){
-			e.preventDefault();
-			iframe.attr('src', switcher.attr('data-src'));
-		});
+		selected == 'true' ? selected = 'false' : selected = 'true';
+		toggle.attr('data-selected', selected);
+
+		arrayIndex = jQuery.inArray(encodeURI(theme), window.themes);
+
+		if(selected == 'true' && arrayIndex == -1) {
+			window.themes.push(encodeURI(theme));
+		}
+
+		if(selected == 'false' && arrayIndex > -1) {
+			window.themes.splice(arrayIndex, 1);
+		}
+
+    url = window.base_url + 'project=' + window.country;
+
+    if(window.themes.length > 0) {
+      collections = window.themes.join(',');
+      url += '&collections=' + collections;
+    }
+
+		iframe.attr('src', url);
 	});
 }
 
