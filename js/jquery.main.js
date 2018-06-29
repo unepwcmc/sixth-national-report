@@ -10,6 +10,8 @@ jQuery(function() {
 	initIframeChange();
 });
 
+window.base_url = 'https://mx.app.fxi.io/?lockProject=true&'
+
 function initOpenLighbox() {
 	var elem = jQuery('#popup-on-load');
 	if( elem.length >= 1) {
@@ -25,13 +27,15 @@ function initOpenLighbox() {
 function initIframeChange() {
 	var iframe = jQuery('#content iframe');
 	jQuery('#region').on('change', function(){
-		iframe.attr('src', jQuery(this).val());
+    url = window.base_url + 'project=' + jQuery(this).val();
+    
+		iframe.attr('src', url);
 	});
 
-	
+
 	jQuery('.info-list .switch').each(function(){
 		var switcher = jQuery(this);
-		
+
 		switcher.on('click', function(e){
 			e.preventDefault();
 			iframe.attr('src', switcher.attr('data-src'));
@@ -53,7 +57,7 @@ function initLanguage() {
 
 function initToggler() {
 	var elem = jQuery('.switch');
-	
+
 	elem.each(function() {
 		var self = jQuery(this);
 		self.on('click',function() {
@@ -699,7 +703,7 @@ function initAccordion() {
 	var isTouchDevice = ('ontouchstart' in window) || window.DocumentTouch && document instanceof window.DocumentTouch,
 		isWinPhoneDevice = /Windows Phone/.test(navigator.userAgent);
 	commonOptions.isMobileDevice = !!(isTouchDevice || isWinPhoneDevice);
-	
+
 	var isIOS = /(iPad|iPhone).*OS ([0-9_]*) .*/.exec(navigator.userAgent);
 	if(isIOS) isIOS = parseFloat(isIOS[2].replace(/_/g, '.'));
 	commonOptions.ios = isIOS;
@@ -1109,7 +1113,7 @@ function initAccordion() {
 	window.jcf = api;
 
 	return api;
-})); 
+}));
 
  /*!
  * JavaScript Custom Forms : Select Module
