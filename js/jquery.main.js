@@ -14,12 +14,11 @@ function initOpenLighbox() {
 	var elem = jQuery('#popup-on-load');
 	if( elem.length >= 1) {
 		var btnOpen = jQuery('<a href="#popup-on-load" class="lightbox"></a>');
+		jQuery('body').append(btnOpen);
+		jQuery(window).on('load', function(){
+			btnOpen.trigger('click');
+		});
 	}
-	
-	jQuery('body').append(btnOpen);
-	jQuery(window).on('load', function(){
-		btnOpen.trigger('click');
-	});
 }
 
 function initIframeChange() {
