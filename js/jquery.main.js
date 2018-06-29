@@ -14,12 +14,12 @@ function initOpenLighbox() {
 	var elem = jQuery('#popup-on-load');
 	if( elem.length >= 1) {
 		var btnOpen = jQuery('<a href="#popup-on-load" class="lightbox"></a>');
+		
+		jQuery('body').append(btnOpen);
+		jQuery(window).on('load', function(){
+			btnOpen.trigger('click');
+		});
 	}
-	
-	jQuery('body').append(btnOpen);
-	jQuery(window).on('load', function(){
-		btnOpen.trigger('click');
-	});
 }
 
 function initIframeChange() {
@@ -53,7 +53,7 @@ function initLanguage() {
 
 function initToggler() {
 	var elem = jQuery('.switch');
-	console.log(elem);
+	
 	elem.each(function() {
 		var self = jQuery(this);
 		self.on('click',function() {
@@ -65,7 +65,8 @@ function initToggler() {
 function initFormValidation() {
 	jQuery('.form-validation').formValidation({
 		errorClass: 'error',
-		addClassToParent: '.input-wrap'
+		addClassToParent: '.input-wrap',
+		successSendClass: 'ajax-success'
 	});
 }
 
