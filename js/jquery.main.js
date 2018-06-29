@@ -27,8 +27,14 @@ function initOpenLighbox() {
 function initIframeChange() {
 	var iframe = jQuery('#content iframe');
 	jQuery('#region').on('change', function(){
+    current_url = iframe.attr('src');
+    themes = iframe.attr('src').split('collection')[1]
     url = window.base_url + 'project=' + jQuery(this).val();
-    
+
+    if(themes !== undefined){
+      url += themes
+    }
+
 		iframe.attr('src', url);
 	});
 
