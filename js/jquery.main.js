@@ -47,7 +47,7 @@ function initIframeChange() {
 		selected == 'true' ? selected = 'false' : selected = 'true'
 		toggle.attr('data-selected', selected)
 
-		arrayIndex = jQuery.inArray(theme, window.themes)
+		arrayIndex = jQuery.inArray(encodeURI(theme), window.themes)
 
 		if(selected == 'true' && arrayIndex == -1) {
 			window.themes.push(encodeURI(theme))
