@@ -10,7 +10,9 @@ jQuery(function() {
 	initIframeChange();
 });
 
-window.base_url = 'https://mx.app.fxi.io/?lockProject=true&'
+window.base_url = 'https://mx.app.fxi.io/?lockProject=true&';
+window.country;
+window.themes = [];
 
 function initOpenLighbox() {
 	var elem = jQuery('#popup-on-load');
@@ -26,20 +28,33 @@ function initOpenLighbox() {
 
 function initIframeChange() {
 	var iframe = jQuery('#content iframe');
+
 	jQuery('#region').on('change', function(){
+		window.country = jQuery(this).val();
+
     url = window.base_url + 'project=' + jQuery(this).val();
     
 		iframe.attr('src', url);
 	});
 
 
-	jQuery('.info-list .switch').each(function(){
-		var switcher = jQuery(this);
+	jQuery('.info-list .switch').on('click', function(e){
+		e.preventDefault();
+		toggle = jQuery(this)
+		theme = toggle.attr('data-theme')
+		selected = toggle.attr('data-selected')
 
-		switcher.on('click', function(e){
-			e.preventDefault();
-			iframe.attr('src', switcher.attr('data-src'));
-		});
+		selected == 'true' ? selected = 'false' : selected = 'true'
+		toggle.attr('data-selected', selected)
+
+		if(selected == 'true' && jQuery.inArray(theme, window.themes) == -1) {
+			window.themes.push(encodeURI(theme))
+		}
+
+		collections = window.themes.join(',')
+		url = window.base_url + 'project=' + window.country + '&collections=' + collections
+		
+		iframe.attr('src', url);
 	});
 }
 
