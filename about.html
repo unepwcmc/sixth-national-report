@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=1270, initial-scale=1.0">
 	<title>UNBiodiversity Lab</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> 
 	<link media="all" rel="stylesheet" href="css/main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
@@ -103,7 +103,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<form class="contact-form form-validation" action="mail-1.php" method="POST">
+							<form class="contact-form form-validation" action="inc-mail/mail.php" method="POST">
 								<div class="input-wrap">
 									<label for="name">Name</label>
 									<input type="text" id="name" data-required="true" name="uname">
@@ -116,8 +116,8 @@
 									<label for="message">Message</label>
 									<textarea  id="message" data-required="true" name="umessage"></textarea>
 								</div>
-								<button class="btn" type="submit">Send</button>
-								<input type="hidden" name="targetEmail" value="kaiser.sin17@gmail.com">
+								<input type="hidden" name="mail_submit" value="1">
+								<input class="btn" type="submit" value="Send"></input>
 							</form>
 						</div>
 					</div>

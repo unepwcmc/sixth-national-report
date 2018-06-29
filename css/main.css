@@ -2074,11 +2074,12 @@ li.fancybox-thumbs-loading {
 	height: 245px;
 }
 
-.contact-block button {
+.contact-block .btn {
 	border: none;
 	margin-top: 20px;
 	padding: 13px 18px;
 	width: 179px;
+	border-radius: 2px;
 }
 
 .platform-block {
