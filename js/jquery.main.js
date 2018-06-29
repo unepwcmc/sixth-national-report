@@ -11,7 +11,7 @@ jQuery(function() {
 });
 
 window.base_url = 'https://mx.app.fxi.io/?lockProject=true&';
-window.country;
+window.country = 'MX-XNI-RMZ-KKL-FMS-DVH'
 window.themes = [];
 
 function initOpenLighbox() {
@@ -33,7 +33,7 @@ function initIframeChange() {
 		window.country = jQuery(this).val();
 
     url = window.base_url + 'project=' + jQuery(this).val();
-    
+
 		iframe.attr('src', url);
 	});
 
@@ -59,7 +59,7 @@ function initIframeChange() {
 
 		collections = window.themes.join(',')
 		url = window.base_url + 'project=' + window.country + '&collections=' + collections
-		
+
 		iframe.attr('src', url);
 	});
 }
