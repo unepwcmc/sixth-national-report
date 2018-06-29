@@ -1,0 +1,16 @@
+#footer {
+	outline-style: groove;
+	display: table-footer-group;
+	height: 1%;
+	background:  #24262B;
+	color: $white;
+	text-align: center;
+
+	.footer {
+		padding: 10px;
+	}
+
+	p {
+		margin: 0;
+	}
+}
