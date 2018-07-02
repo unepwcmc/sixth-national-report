@@ -41,8 +41,6 @@ function initIframeChange() {
       url += '&noViews=true';
     }
 
-    console.log(url);
-
 		iframe.attr('src', url);
 	});
 
@@ -75,8 +73,6 @@ function initIframeChange() {
     else {
       url += '&noViews=true'
     }
-
-    console.log(url);
 
 		iframe.attr('src', url);
 	});
