@@ -575,3 +575,11 @@ h1 {
 	}
 	
 }
+
+.box {
+	&--white {
+		background-color: white;
+		margin-bottom: 20px;
+		padding: 30px 24px;
+	}
+}
