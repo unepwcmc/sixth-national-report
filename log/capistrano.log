@@ -1,0 +1,660 @@
+# Logfile created on 2018-07-02 10:06:36 +0100 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-07-02 10:06:36 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-07-02 10:08:22 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-07-02 10:10:15 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [340a011b] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [340a011b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [340a011b] Finished in 6.706 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [6e8e4c61] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [6e8e4c61] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [6e8e4c61] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [e0f80027] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e0f80027] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e0f80027] Finished in 0.071 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [49b63e1a] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [49b63e1a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [49b63e1a] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [c274d166] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [c274d166] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [c274d166] 	5cb22345173ad2a7b69379ba1d390ee4d688f752	HEAD
+  INFO [c274d166] Finished in 1.488 seconds with exit status 0 (successful).
+  INFO [7da90202] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [7da90202] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [7da90202] 	5cb22345173ad2a7b69379ba1d390ee4d688f752	HEAD
+  INFO [7da90202] Finished in 1.432 seconds with exit status 0 (successful).
+  INFO [ede8db71] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [ede8db71] Command: /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases
+  INFO [ede8db71] Finished in 0.071 seconds with exit status 0 (successful).
+ DEBUG [483bf5f3] Running [ -f /home/wcmc/sixth-national-report/current/REVISION ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [483bf5f3] Command: [ -f /home/wcmc/sixth-national-report/current/REVISION ]
+ DEBUG [483bf5f3] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [e7c53a3b] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e7c53a3b] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [e7c53a3b] Finished in 0.065 seconds with exit status 1 (failed).
+ DEBUG [a36c2ad4] Running if test ! -d /home/wcmc/sixth-national-report; then echo "Directory does not exist '/home/wcmc/sixth-national-report'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [a36c2ad4] Command: if test ! -d /home/wcmc/sixth-national-report; then echo "Directory does not exist '/home/wcmc/sixth-national-report'" 1>&2; false; fi
+ DEBUG [a36c2ad4] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [29fb6c04] Running /usr/bin/env git clone --mirror git@github.com:unepwcmc/sixth-national-report.git /home/wcmc/sixth-national-report/repo as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [29fb6c04] Command: cd /home/wcmc/sixth-national-report && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git clone --mirror git@github.com:unepwcmc/sixth-national-report.git /home/wcmc/sixth-national-report/repo )
+ DEBUG [29fb6c04] 	Cloning into bare repository '/home/wcmc/sixth-national-report/repo'...
+ DEBUG [29fb6c04] 	remote: Counting objects: 233, done.[K
+ DEBUG [29fb6c04] 	remote: Compressing objects:   0% (1/185)   [Kremote: Compressing objects:   1% (2/185)   [Kremote: Compressing objects:   2% (4/185)   [Kremote: Compressing objects:   3% (6/185)   [Kremote: Compressing objects:   4% (8/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:   5% (10/185)   [Kremote: Compressing objects:   6% (12/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:   7% (13/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:   8% (15/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:   9% (17/185)   [Kremote: Compressing objects:  10% (19/185)   [Kremote: Compressing objects:  11% (21/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  12% (23/185)   [Kremote: Compressing objects:  13% (25/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  14% (26/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  15% (28/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  16% (30/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  17% (32/185)   [Kremote: Compressing objects:  18% (34/185)   [Kremote: Compressing objects:  19% (36/185)   [Kremote: Compressing objects:  20% (37/185)   [Kremote: Compressing objects:  21% (39/185)   [Kremote: Compressing objects:  22% (41/185)   [Kremote: Compressing objects:  23% (43/185)   [Kremote: Compressing objects:  24% (45/185)   [Kremote: Compressing objects:  25% (47/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  26% (49/185)   [Kremote: Compressing objects:  27% (50/185)   [Kremote: Compressing objects:  28% (52/185)   [Kremote: Compressing objects:  29% (54/185)   [Kremote: Compressing objects:  30% (56/185)   [Kremote: Compressing objects:  31% (58/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  32% (60/185)   [Kremote: Compressing objects:  33% (62/185)   [Kremote: Compressing objects:  34% (63/185)   [Kremote: Compressing objects:  35% (65/185)   [Kremote: Compressing objects:  36% (67/185)   [Kremote: Compressing objects:  37% (69/185)   [Kremote: Compressing objects:  38% (71/185)   [Kremote: Compressing objects:  39% (73/185)   [Kremote: Compressing ob
+ DEBUG [29fb6c04] 	jects:  40% (74/185)   [Kremote: Compressing objects:  41% (76/185)   [Kremote: Compressing objects:  42% (78/185)   [Kremote: Compressing objects:  43% (80/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  44% (82/185)   [Kremote: Compressing objects:  45% (84/185)   [Kremote: Compressing objects:  46% (86/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  47% (87/185)   [Kremote: Compressing objects:  48% (89/185)   [Kremote: Compressing objects:  49% (91/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  50% (93/185)   [Kremote: Compressing objects:  51% (95/185)   [Kremote: Compressing ob
+ DEBUG [29fb6c04] 	jects:  52% (97/185)   [Kremote: Compressing objects:  53% (99/185)   [Kremote: Compressing objects:  54% (100/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  55% (102/185)   [Kremote: Compressing objects:  56% (104/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  57% (106/185)   [Kremote: Compressing objects:  58% (108/185)   [Kremote: Compressing objects:  59% (110/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  60% (111/185)   [Kremote: Compressing objects:  61% (113/185)   [Kremote: Compressing objects:  62% (115/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  63% (117/185)   [Kremote: Compressing objects:  64% (119/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  65% (121/185)   [Kremote: Compressing objects:  66% (123/185)   [Kremote: Compressing objects:  67% (124/185)   [Kremote: Compressing objects:  68% (126/185)   [Kremote: Compressing objects:  69% (128/185)   [Kremote: Compressing objects:  70% (130/185)   [Kremote: Compressing objects:  71% (132/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  72% (134/185)   [Kremote: Compressing objects:  73% (136/185)   [Kremote: Compressing objects:  74% (137/185)   [Kremote: Compressing objects:  75% (139/185)   [Kremote: Compressing objects:  76% (141/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  77% (143/185)   [Kremote: Compressing objects:  78% (145/185)   [Kremote: Compressing objects:  79% (147/185)   [Kremote: Compressing objects:  80% (148/185)   [Kremote: Compressing objects:  81% (150/185)   [Kremote: Compressing objects:  82% (152/185)   [Kremote: Compressing objects:  83% (154/185)   [Kremote: Compressing objects:  84% (156/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  85% (158/185)   [Kremote: Compressing objects:  86% (160/185)   [Kremote: Compressing objects:  87% (161/185)   [Kremote: Compressing objects:  88% (163/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  89% (165/185)   [Kremote: Compressing objects:  90% (167/185)   [Kremote: Compressing objects:  91% (169/185)   [Kremote: Compressing objects:  92% (171/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  93% (173/185)   [Kremote: Compressing objects:  94% (174/185)   [Kremote: Compressing objects:  95% (176/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  96% (178/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  97% (180/185)   [Kremote: Compressing objects:  98% (182/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects:  99% (184/185)   [Kremote: Compressing objects: 100% (185/185)   [K
+ DEBUG [29fb6c04] 	remote: Compressing objects: 100% (185/185), done.[K
+ DEBUG [29fb6c04] 	Receiving objects:   0% (1/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   1% (3/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   2% (5/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   3% (7/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   4% (10/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   5% (12/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   6% (14/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   7% (17/233)   Receiving objects:   8% (19/233)   
+ DEBUG [29fb6c04] 	Receiving objects:   9% (21/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  10% (24/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  11% (26/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  12% (28/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  13% (31/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  14% (33/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  15% (35/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  16% (38/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  17% (40/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  18% (42/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  19% (45/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  20% (47/233)   Receiving objects:  21% (49/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  22% (52/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  23% (54/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  24% (56/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  25% (59/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  26% (61/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  27% (63/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  28% (66/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  29% (68/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  30% (70/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  31% (73/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  32% (75/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  33% (77/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  34% (80/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  35% (82/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  36% (84/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  37% (87/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  38% (89/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  39% (91/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  40% (94/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  41% (96/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  42% (98/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  43% (101/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  44% (103/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  45% (105/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  46% (108/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  47% (110/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  48% (112/233)   Receiving objects:  49% (115/233)   Receiving objects:  50% (117/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  51% (119/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  52% (122/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  53% (124/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  54% (126/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  55% (129/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  56% (131/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  57% (133/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  58% (136/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  59% (138/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  60% (140/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  61% (143/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  62% (145/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  63% (147/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  64% (150/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  65% (152/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  66% (154/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  67% (157/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  68% (159/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  69% (161/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  70% (164/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  71% (166/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  72% (168/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  73% (171/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  74% (173/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  75% (175/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  76% (178/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  77% (180/233)   
+ DEBUG [29fb6c04] 	remote: Total 233 (delta 66), reused 198 (delta 40), pack-reused 0[K
+ DEBUG [29fb6c04] 	Receiving objects:  78% (182/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  79% (185/233)   Receiving objects:  80% (187/233)   Receiving objects:  81% (189/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  82% (192/233)   Receiving objects:  83% (194/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  84% (196/233)   Receiving objects:  85% (199/233)   Receiving objects:  86% (201/233)   Receiving objects:  87% (203/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  88% (206/233)   Receiving objects:  89% (208/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  90% (210/233)   Receiving objects:  91% (213/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  92% (215/233)   Receiving objects:  93% (217/233)   Receiving objects:  94% (220/233)   Receiving objects:  95% (222/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  96% (224/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  97% (227/233)   Receiving objects:  98% (229/233)   
+ DEBUG [29fb6c04] 	Receiving objects:  99% (231/233)   
+ DEBUG [29fb6c04] 	Receiving objects: 100% (233/233)   
+ DEBUG [29fb6c04] 	Receiving objects: 100% (233/233), 1020.15 KiB | 0 bytes/s, done.
+ DEBUG [29fb6c04] 	Resolving deltas:   0% (0/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:   1% (1/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:   3% (2/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:   4% (3/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:   9% (6/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  40% (27/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  42% (28/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  43% (29/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  45% (30/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  46% (31/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  54% (36/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  56% (37/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  75% (50/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  77% (51/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  80% (53/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  81% (54/66)   
+ DEBUG [29fb6c04] 	Resolving deltas:  86% (57/66)   
+ DEBUG [29fb6c04] 	Resolving deltas: 100% (66/66)   
+ DEBUG [29fb6c04] 	Resolving deltas: 100% (66/66), done.
+ DEBUG [29fb6c04] 	Checking connectivity... 
+ DEBUG [29fb6c04] 	done.
+  INFO [29fb6c04] Finished in 2.043 seconds with exit status 0 (successful).
+ DEBUG [ca5197ea] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [ca5197ea] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [ca5197ea] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [afb50fd4] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [afb50fd4] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [afb50fd4] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [526f5359] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [526f5359] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [526f5359] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [d9a658ea] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d9a658ea] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d9a658ea] 	Fetching origin
+  INFO [d9a658ea] Finished in 1.451 seconds with exit status 0 (successful).
+ DEBUG [db6ff575] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [db6ff575] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [db6ff575] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [59496525] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [59496525] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [59496525] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [bc97d8a5] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [bc97d8a5] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [bc97d8a5] 	Fetching origin
+  INFO [bc97d8a5] Finished in 1.600 seconds with exit status 0 (successful).
+ DEBUG [4de424d1] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [4de424d1] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [4de424d1] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [1722a7e8] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702091025 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [1722a7e8] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702091025 )
+  INFO [1722a7e8] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [6b16ea78] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702091025 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [6b16ea78] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702091025 )
+  INFO [6b16ea78] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [b90d24a6] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [b90d24a6] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [b90d24a6] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [eecdd6ac] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702091025 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [eecdd6ac] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702091025 )
+  INFO [eecdd6ac] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [75afb003] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702091025 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [75afb003] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702091025 )
+  INFO [75afb003] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [a73ab0aa] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [a73ab0aa] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [a73ab0aa] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [b6bd1c03] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [b6bd1c03] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b6bd1c03] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [b6bd1c03] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [b0c13474] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [b0c13474] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [b0c13474] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [e3c18189] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e3c18189] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [e3c18189] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [e3c18189] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [d8ff2434] Running if test ! -d /home/wcmc/sixth-national-report/releases/20180702091025; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702091025'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d8ff2434] Command: if test ! -d /home/wcmc/sixth-national-report/releases/20180702091025; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702091025'" 1>&2; false; fi
+ DEBUG [d8ff2434] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [c6668306] Running /usr/bin/env echo "5cb22345173ad2a7b69379ba1d390ee4d688f752" >> REVISION as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [c6668306] Command: cd /home/wcmc/sixth-national-report/releases/20180702091025 && /usr/bin/env echo "5cb22345173ad2a7b69379ba1d390ee4d688f752" >> REVISION
+  INFO [c6668306] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [fa952996] Running /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702091025 /home/wcmc/sixth-national-report/releases/current as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [fa952996] Command: /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702091025 /home/wcmc/sixth-national-report/releases/current
+  INFO [fa952996] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [24fb8f9a] Running /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [24fb8f9a] Command: /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report
+  INFO [24fb8f9a] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [2b82b7d6] Running /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [2b82b7d6] Command: /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases
+ DEBUG [2b82b7d6] 	20180702091025
+ DEBUG [2b82b7d6] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [f5ee95ba] Running if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f5ee95ba] Command: if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi
+ DEBUG [f5ee95ba] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [322fa0a6] Running /usr/bin/env echo "Branch master (at 5cb22345173ad2a7b69379ba1d390ee4d688f752) deployed as release 20180702091025 by stuart" >> /home/wcmc/sixth-national-report/revisions.log as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [322fa0a6] Command: cd /home/wcmc/sixth-national-report/releases && /usr/bin/env echo "Branch master (at 5cb22345173ad2a7b69379ba1d390ee4d688f752) deployed as release 20180702091025 by stuart" >> /home/wcmc/sixth-national-report/revisions.log
+  INFO [322fa0a6] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-07-02 10:54:32 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [00f35729] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [00f35729] Command: /usr/bin/env mkdir -p /tmp
+  INFO [00f35729] Finished in 0.604 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [357b7718] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [357b7718] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [357b7718] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [1b808696] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [1b808696] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1b808696] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [058cc462] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [058cc462] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [058cc462] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [99c59215] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [99c59215] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [99c59215] 	5cb22345173ad2a7b69379ba1d390ee4d688f752	HEAD
+  INFO [99c59215] Finished in 1.455 seconds with exit status 0 (successful).
+  INFO [dc2211d2] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [dc2211d2] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [dc2211d2] 	5cb22345173ad2a7b69379ba1d390ee4d688f752	HEAD
+  INFO [dc2211d2] Finished in 1.409 seconds with exit status 0 (successful).
+  INFO [18a62d5a] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [18a62d5a] Command: /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases
+  INFO [18a62d5a] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [9605ea00] Running [ -f /home/wcmc/sixth-national-report/current/REVISION ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [9605ea00] Command: [ -f /home/wcmc/sixth-national-report/current/REVISION ]
+ DEBUG [9605ea00] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [d79e3445] Running /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d79e3445] Command: /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null
+ DEBUG [d79e3445] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [d79e3445] Finished in 0.076 seconds with exit status 0 (successful).
+ DEBUG [ff44b50a] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [ff44b50a] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [ff44b50a] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [e5d09fb3] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e5d09fb3] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [e5d09fb3] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [20b952a5] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [20b952a5] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [20b952a5] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [77ab7b17] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [77ab7b17] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [77ab7b17] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [aeaa8abf] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [aeaa8abf] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [aeaa8abf] 	Fetching origin
+  INFO [aeaa8abf] Finished in 1.404 seconds with exit status 0 (successful).
+ DEBUG [d6e9a29b] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d6e9a29b] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [d6e9a29b] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [5e4b23e8] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [5e4b23e8] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [5e4b23e8] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [7e0abd3b] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [7e0abd3b] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [7e0abd3b] 	Fetching origin
+  INFO [7e0abd3b] Finished in 1.599 seconds with exit status 0 (successful).
+ DEBUG [6f21cfdc] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [6f21cfdc] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [6f21cfdc] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [c2893a6d] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702095436 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [c2893a6d] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702095436 )
+  INFO [c2893a6d] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [5cbed93f] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702095436 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [5cbed93f] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702095436 )
+  INFO [5cbed93f] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [ce37b5c2] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [ce37b5c2] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [ce37b5c2] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [fb00e134] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702095436 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [fb00e134] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702095436 )
+  INFO [fb00e134] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [35d44eea] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702095436 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [35d44eea] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702095436 )
+  INFO [35d44eea] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [77001789] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [77001789] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [77001789] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [d427fb0d] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d427fb0d] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d427fb0d] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [d427fb0d] Finished in 0.257 seconds with exit status 0 (successful).
+ DEBUG [5b60b8d5] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [5b60b8d5] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [5b60b8d5] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [986cee75] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [986cee75] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [986cee75] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [986cee75] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [5b8a44cd] Running if test ! -d /home/wcmc/sixth-national-report/releases/20180702095436; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702095436'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [5b8a44cd] Command: if test ! -d /home/wcmc/sixth-national-report/releases/20180702095436; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702095436'" 1>&2; false; fi
+ DEBUG [5b8a44cd] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [b8a94763] Running /usr/bin/env echo "5cb22345173ad2a7b69379ba1d390ee4d688f752" >> REVISION as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [b8a94763] Command: cd /home/wcmc/sixth-national-report/releases/20180702095436 && /usr/bin/env echo "5cb22345173ad2a7b69379ba1d390ee4d688f752" >> REVISION
+  INFO [b8a94763] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [fb22b389] Running /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702095436 /home/wcmc/sixth-national-report/releases/current as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [fb22b389] Command: /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702095436 /home/wcmc/sixth-national-report/releases/current
+  INFO [fb22b389] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [2de90dff] Running /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [2de90dff] Command: /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report
+  INFO [2de90dff] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [05abe4bf] Running /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [05abe4bf] Command: /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases
+ DEBUG [05abe4bf] 	20180702091025	20180702095436
+ DEBUG [05abe4bf] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [758993e0] Running if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [758993e0] Command: if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi
+ DEBUG [758993e0] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [f9d950d2] Running /usr/bin/env echo "Branch master (at 5cb22345173ad2a7b69379ba1d390ee4d688f752) deployed as release 20180702095436 by stuart" >> /home/wcmc/sixth-national-report/revisions.log as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f9d950d2] Command: cd /home/wcmc/sixth-national-report/releases && /usr/bin/env echo "Branch master (at 5cb22345173ad2a7b69379ba1d390ee4d688f752) deployed as release 20180702095436 by stuart" >> /home/wcmc/sixth-national-report/revisions.log
+  INFO [f9d950d2] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-07-02 11:03:49 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7b59092b] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [7b59092b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7b59092b] Finished in 0.692 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [157b7e77] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [157b7e77] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [157b7e77] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [0fbf2839] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [0fbf2839] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0fbf2839] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [e72b0348] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e72b0348] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [e72b0348] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [40ecd4b5] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [40ecd4b5] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [40ecd4b5] 	5cb22345173ad2a7b69379ba1d390ee4d688f752	HEAD
+  INFO [40ecd4b5] Finished in 1.459 seconds with exit status 0 (successful).
+  INFO [576b7103] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [576b7103] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [576b7103] 	5cb22345173ad2a7b69379ba1d390ee4d688f752	HEAD
+  INFO [576b7103] Finished in 1.534 seconds with exit status 0 (successful).
+  INFO [488f45ac] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [488f45ac] Command: /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases
+  INFO [488f45ac] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [505f8241] Running [ -f /home/wcmc/sixth-national-report/current/REVISION ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [505f8241] Command: [ -f /home/wcmc/sixth-national-report/current/REVISION ]
+ DEBUG [505f8241] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [bbe6c6e0] Running /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [bbe6c6e0] Command: /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null
+ DEBUG [bbe6c6e0] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [bbe6c6e0] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [051e92e1] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [051e92e1] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [051e92e1] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [a8fa9d8f] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [a8fa9d8f] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [a8fa9d8f] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [e0f7f20f] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e0f7f20f] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [e0f7f20f] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [13a7e716] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [13a7e716] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [13a7e716] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [fdf1935a] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [fdf1935a] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [fdf1935a] 	Fetching origin
+  INFO [fdf1935a] Finished in 1.535 seconds with exit status 0 (successful).
+ DEBUG [da4714d8] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [da4714d8] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [da4714d8] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [04df34c1] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [04df34c1] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [04df34c1] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [8f5f92b5] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [8f5f92b5] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8f5f92b5] 	Fetching origin
+  INFO [8f5f92b5] Finished in 1.391 seconds with exit status 0 (successful).
+ DEBUG [d9da4a52] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d9da4a52] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [d9da4a52] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [f603d87b] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100353 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f603d87b] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100353 )
+  INFO [f603d87b] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [67bd8b8b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100353 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [67bd8b8b] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100353 )
+  INFO [67bd8b8b] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [d1d57293] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d1d57293] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [d1d57293] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [dd3f37ab] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100353 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [dd3f37ab] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100353 )
+  INFO [dd3f37ab] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [cd3777c6] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100353 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [cd3777c6] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100353 )
+  INFO [cd3777c6] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [b213e591] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [b213e591] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [b213e591] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG [63d86e57] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [63d86e57] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [63d86e57] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [63d86e57] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [9e615c27] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [9e615c27] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [9e615c27] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [062b053f] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [062b053f] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [062b053f] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [062b053f] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [89768598] Running if test ! -d /home/wcmc/sixth-national-report/releases/20180702100353; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702100353'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [89768598] Command: if test ! -d /home/wcmc/sixth-national-report/releases/20180702100353; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702100353'" 1>&2; false; fi
+ DEBUG [89768598] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [3c35c53e] Running /usr/bin/env echo "5cb22345173ad2a7b69379ba1d390ee4d688f752" >> REVISION as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [3c35c53e] Command: cd /home/wcmc/sixth-national-report/releases/20180702100353 && /usr/bin/env echo "5cb22345173ad2a7b69379ba1d390ee4d688f752" >> REVISION
+  INFO [3c35c53e] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [a3e29eab] Running /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702100353 /home/wcmc/sixth-national-report/releases/current as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [a3e29eab] Command: /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702100353 /home/wcmc/sixth-national-report/releases/current
+  INFO [a3e29eab] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [b697de89] Running /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [b697de89] Command: /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report
+  INFO [b697de89] Finished in 0.298 seconds with exit status 0 (successful).
+  INFO [3e6a92c4] Running sudo service nginx reload as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [3e6a92c4] Command: sudo service nginx reload
+ DEBUG [3e6a92c4] 	 * Reloading nginx configuration nginx       
+ DEBUG [3e6a92c4] 	[80G
+ DEBUG [3e6a92c4] 	 
+ DEBUG [3e6a92c4] 	
+ DEBUG [3e6a92c4] 	[74G
+ DEBUG [3e6a92c4] 	[ OK ]
+  INFO [3e6a92c4] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [de2be382] Running /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [de2be382] Command: /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases
+ DEBUG [de2be382] 	20180702091025	20180702095436	20180702100353
+ DEBUG [de2be382] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [45711fda] Running if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [45711fda] Command: if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi
+ DEBUG [45711fda] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [a3104589] Running /usr/bin/env echo "Branch master (at 5cb22345173ad2a7b69379ba1d390ee4d688f752) deployed as release 20180702100353 by stuart" >> /home/wcmc/sixth-national-report/revisions.log as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [a3104589] Command: cd /home/wcmc/sixth-national-report/releases && /usr/bin/env echo "Branch master (at 5cb22345173ad2a7b69379ba1d390ee4d688f752) deployed as release 20180702100353 by stuart" >> /home/wcmc/sixth-national-report/revisions.log
+  INFO [a3104589] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-07-02 11:04:52 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e5844396] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e5844396] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e5844396] Finished in 0.982 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [9b35b067] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [9b35b067] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [9b35b067] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [621422f9] Running /usr/bin/env mkdir -p /tmp as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [621422f9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [621422f9] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stuart.sh 100.0%
+  INFO [34795715] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [34795715] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stuart.sh
+  INFO [34795715] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [6eae6b54] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [6eae6b54] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [6eae6b54] 	e85fc11be9a71fa068988bfb2a47d86adde134f8	HEAD
+  INFO [6eae6b54] Finished in 1.492 seconds with exit status 0 (successful).
+  INFO [f25f9409] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f25f9409] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [f25f9409] 	e85fc11be9a71fa068988bfb2a47d86adde134f8	HEAD
+  INFO [f25f9409] Finished in 1.431 seconds with exit status 0 (successful).
+  INFO [80ff53ae] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [80ff53ae] Command: /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases
+  INFO [80ff53ae] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [c20ac148] Running [ -f /home/wcmc/sixth-national-report/current/REVISION ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [c20ac148] Command: [ -f /home/wcmc/sixth-national-report/current/REVISION ]
+ DEBUG [c20ac148] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [60c6a142] Running /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [60c6a142] Command: /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null
+ DEBUG [60c6a142] 	5cb22345173ad2a7b69379ba1d390ee4d688f752
+ DEBUG [60c6a142] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [e38f27f9] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [e38f27f9] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [e38f27f9] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [f37e6bf4] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f37e6bf4] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [f37e6bf4] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [f376cbc1] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f376cbc1] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [f376cbc1] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [b3de8470] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [b3de8470] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [b3de8470] Finished in 0.261 seconds with exit status 0 (successful).
+  INFO [23328e7f] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [23328e7f] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [23328e7f] 	Fetching origin
+ DEBUG [23328e7f] 	remote: Counting objects: 8, done.[K
+ DEBUG [23328e7f] 	remote: Compressing objects:  33% (1/3)   [K
+ DEBUG [23328e7f] 	remote: Compressing objects:  66% (2/3)   [K
+ DEBUG [23328e7f] 	remote: Compressing objects: 100% (3/3)   [K
+ DEBUG [23328e7f] 	remote: Compressing objects: 100% (3/3), done.[K
+ DEBUG [23328e7f] 	remote: Total 8 (delta 2), reused 8 (delta 2), pack-reused 0[K
+ DEBUG [23328e7f] 	Unpacking objects:  12% (1/8)   
+ DEBUG [23328e7f] 	Unpacking objects:  25% (2/8)   
+ DEBUG [23328e7f] 	Unpacking objects:  37% (3/8)   
+ DEBUG [23328e7f] 	Unpacking objects:  50% (4/8)   
+ DEBUG [23328e7f] 	Unpacking objects:  62% (5/8)   
+ DEBUG [23328e7f] 	Unpacking objects:  75% (6/8)   
+ DEBUG [23328e7f] 	Unpacking objects:  87% (7/8)   
+ DEBUG [23328e7f] 	Unpacking objects: 100% (8/8)   
+ DEBUG [23328e7f] 	Unpacking objects: 100% (8/8), done.
+ DEBUG [23328e7f] 	From github.com:unepwcmc/sixth-national-report
+   5cb2234..e85fc11  master     -> master
+  INFO [23328e7f] Finished in 1.612 seconds with exit status 0 (successful).
+ DEBUG [12536fb3] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [12536fb3] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [12536fb3] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [29074100] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [29074100] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [29074100] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [de77847b] Running /usr/bin/env git remote update --prune as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [de77847b] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [de77847b] 	Fetching origin
+  INFO [de77847b] Finished in 1.739 seconds with exit status 0 (successful).
+ DEBUG [785c3bd6] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [785c3bd6] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [785c3bd6] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [68ac26d6] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100457 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [68ac26d6] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100457 )
+  INFO [68ac26d6] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [a39a3c61] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100457 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [a39a3c61] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100457 )
+  INFO [a39a3c61] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [8ea2eb1c] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [8ea2eb1c] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [8ea2eb1c] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [dfa6646c] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100457 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [dfa6646c] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180702100457 )
+  INFO [dfa6646c] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [2b5f5c43] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100457 as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [2b5f5c43] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180702100457 )
+  INFO [2b5f5c43] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [00dde377] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [00dde377] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [00dde377] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [d125de9a] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d125de9a] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d125de9a] 	e85fc11be9a71fa068988bfb2a47d86adde134f8
+ DEBUG [d125de9a] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [d9b5ffab] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [d9b5ffab] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [d9b5ffab] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [af11ea6d] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [af11ea6d] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stuart.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [af11ea6d] 	e85fc11be9a71fa068988bfb2a47d86adde134f8
+ DEBUG [af11ea6d] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [00f4e439] Running if test ! -d /home/wcmc/sixth-national-report/releases/20180702100457; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702100457'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [00f4e439] Command: if test ! -d /home/wcmc/sixth-national-report/releases/20180702100457; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180702100457'" 1>&2; false; fi
+ DEBUG [00f4e439] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [33829386] Running /usr/bin/env echo "e85fc11be9a71fa068988bfb2a47d86adde134f8" >> REVISION as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [33829386] Command: cd /home/wcmc/sixth-national-report/releases/20180702100457 && /usr/bin/env echo "e85fc11be9a71fa068988bfb2a47d86adde134f8" >> REVISION
+  INFO [33829386] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [f446fdf2] Running /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702100457 /home/wcmc/sixth-national-report/releases/current as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f446fdf2] Command: /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180702100457 /home/wcmc/sixth-national-report/releases/current
+  INFO [f446fdf2] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [12bcf93c] Running /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [12bcf93c] Command: /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report
+  INFO [12bcf93c] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [5ffac132] Running sudo service nginx reload as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [5ffac132] Command: sudo service nginx reload
+ DEBUG [5ffac132] 	 * Reloading nginx configuration nginx       
+ DEBUG [5ffac132] 	[80G
+ DEBUG [5ffac132] 	 
+ DEBUG [5ffac132] 	
+ DEBUG [5ffac132] 	[74G
+ DEBUG [5ffac132] 	[ OK ]
+  INFO [5ffac132] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [02988562] Running /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [02988562] Command: /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases
+ DEBUG [02988562] 	20180702091025	20180702095436	20180702100353	20180702100457
+ DEBUG [02988562] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [f413caf9] Running if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [f413caf9] Command: if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi
+ DEBUG [f413caf9] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [973715fd] Running /usr/bin/env echo "Branch master (at e85fc11be9a71fa068988bfb2a47d86adde134f8) deployed as release 20180702100457 by stuart" >> /home/wcmc/sixth-national-report/revisions.log as wcmc@web-staging.linode.unep-wcmc.org
+ DEBUG [973715fd] Command: cd /home/wcmc/sixth-national-report/releases && /usr/bin/env echo "Branch master (at e85fc11be9a71fa068988bfb2a47d86adde134f8) deployed as release 20180702100457 by stuart" >> /home/wcmc/sixth-national-report/revisions.log
+  INFO [973715fd] Finished in 0.074 seconds with exit status 0 (successful).
