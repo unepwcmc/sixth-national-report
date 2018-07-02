@@ -1,3 +1,18 @@
+### ALPHA v0.3 Release
+
+**Amend content**
+
+* Update walktrough text and images
+* Update about page text
+* Success stories link to point to external source
+
+**Iframe interaction**
+
+* Move World to top of the countries list
+* Add project parameter to the URL on the sandbox page
+* Update base url
+* NoViews parameter related to presence of collections
+
 ### ALPHA v0.2 Release
 
 **Amend content**
