@@ -20,6 +20,8 @@ set :pty, true
 set :keep_releases, 5
 
 
+after 'deploy:published', 'restart_nginx'
+
 
 
 # Default branch is :master
