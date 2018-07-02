@@ -546,6 +546,14 @@ h1 {
 		p {
 			margin: 0 0 16px;
 		}
+
+		ul { margin-bottom: 14px; }
+
+		li { 
+			font-size: 13px; 
+
+			display: list-item;
+		}
 	}
 
 	.layers-list {
