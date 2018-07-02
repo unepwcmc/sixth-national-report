@@ -10,7 +10,7 @@ jQuery(function() {
 	initIframeChange();
 });
 
-window.base_url = 'https://mx.app.fxi.io/?lockProject=true&';
+window.base_url = 'https://mvp.app.mapx.org/?lockProject=true&';
 window.country = 'MX-XNI-RMZ-KKL-FMS-DVH'
 window.themes = [];
 
