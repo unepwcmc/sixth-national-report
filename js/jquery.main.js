@@ -35,8 +35,13 @@ function initIframeChange() {
     url = window.base_url + 'project=' + window.country;
 
     if(window.themes.length > 0) {
-      url += '&collection=' + window.themes;
+      url += '&collection=' + window.themes + '&noViews=false';
     }
+    else {
+      url += '&noViews=true';
+    }
+
+    console.log(url);
 
 		iframe.attr('src', url);
 	});
@@ -65,8 +70,13 @@ function initIframeChange() {
 
     if(window.themes.length > 0) {
       collections = window.themes.join(',');
-      url += '&collections=' + collections;
+      url += '&collections=' + collections + '&noViews=false';
     }
+    else {
+      url += '&noViews=true'
+    }
+
+    console.log(url);
 
 		iframe.attr('src', url);
 	});
