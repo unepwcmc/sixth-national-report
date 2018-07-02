@@ -8,8 +8,6 @@ set :deploy_user, 'wcmc'
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/#{fetch(:application)}"
 
-set :scm, :git
-set :scm_username, "unepwcmc-read"
 
 set :ssh_options, {
   forward_agent: true,
