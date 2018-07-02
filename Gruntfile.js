@@ -346,25 +346,25 @@ var PathConfig = require('./grunt-settings.js');
       }
     },
 
-    'sftp-deploy': {
-      build: {
-        auth: {
-          host: '<%= config.sftpServer %>',
-          port: '<%= config.sftpPort %>',
-          authKey: {
-                    "username": "<%= config.sftpLogin %>",
-                    "password": "<%= config.sftpPas %>"
-                  }
-        },
-        cache: 'sftpCache.json',
-        src: 'css',
-        dest: '<%= config.sftpDestination %>',
-        //exclusions: ['/path/to/source/folder/**/.DS_Store', '/path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
-        serverSep: '/',
-        concurrency: 4,
-        progress: true
-      }
-    }
+    // 'sftp-deploy': {
+    //   build: {
+    //     auth: {
+    //       host: '<%= config.sftpServer %>',
+    //       port: '<%= config.sftpPort %>',
+    //       authKey: {
+    //                 "username": "<%= config.sftpLogin %>",
+    //                 "password": "<%= config.sftpPas %>"
+    //               }
+    //     },
+    //     cache: 'sftpCache.json',
+    //     src: 'css',
+    //     dest: '<%= config.sftpDestination %>',
+    //     //exclusions: ['/path/to/source/folder/**/.DS_Store', '/path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
+    //     serverSep: '/',
+    //     concurrency: 4,
+    //     progress: true
+    //   }
+    // }
 
   });
 
@@ -384,7 +384,7 @@ var PathConfig = require('./grunt-settings.js');
   grunt.registerTask('default', ['dev']);
 
   // upload to server
-  grunt.registerTask('sftp', ['sftp-deploy']);
+  // grunt.registerTask('sftp', ['sftp-deploy']);
 
 //finally 
   //css beautiful
