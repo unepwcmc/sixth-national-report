@@ -1,3 +1,10 @@
+### ALPHA v0.2 Release
+
+**Amend content**
+
+* Remove layer references in accordions text
+* Change Aichi Targets to Themes
+
 ### ALPHA Release
 
 **Main layout**
