@@ -1,3 +1,9 @@
+### ALPHA v0.4 Release
+
+**About mailer form**
+
+* Fix PHP mailer
+
 ### ALPHA v0.3 Release
 
 **Amend content**
