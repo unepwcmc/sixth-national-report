@@ -1,3 +1,9 @@
+### BETA v0.2 Release
+
+**Iframe interaction**
+
+* Fix collections param typo
+
 ### BETA v0.1 Release
 
 **Amend content**
