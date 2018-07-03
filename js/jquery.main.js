@@ -35,7 +35,7 @@ function initIframeChange() {
     url = window.base_url + 'project=' + window.country;
 
     if(window.themes.length > 0) {
-      url += '&collection=' + window.themes + '&noViews=false';
+      url += '&collections=' + window.themes + '&noViews=false';
     }
     else {
       url += '&noViews=true';
