@@ -20,6 +20,10 @@
 		}
 	}
 
+	.about-logo {
+		max-width: 200px; max-height: 100px;
+	}
+
 	.text-holder {
 		max-width: 795px;
 		margin: 0 auto;
@@ -39,6 +43,8 @@
 }
 
 .about-block {
+	background-size: cover;
+	color: white;
 	padding: 74px 0 55px;
 	background: #d8d8d8;
 	line-height: 1.66;
