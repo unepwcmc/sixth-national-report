@@ -1623,6 +1623,8 @@ li.fancybox-thumbs-loading {
   margin: 0 0 18px; }
 
 .about-block {
+  background-size: cover;
+  color: white;
   padding: 74px 0 55px;
   background: #d8d8d8;
   line-height: 1.66;
