@@ -1,3 +1,18 @@
+### BETA v0.1 Release
+
+**Amend content**
+
+* Update hero images
+* Update logos
+
+**Layout**
+
+* Hide languages dropdown
+
+**Mailer**
+
+* Change mailer address
+
 ### ALPHA v0.4 Release
 
 **About mailer form**
