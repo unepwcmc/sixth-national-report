@@ -7,7 +7,7 @@
     $fields_names = 'uname=First Name: ;uemail=Email Address: ;umessage=Message: ';
 
 
-    $headers[] = 'From: UNBiodiversityLab';
+    $headers[] = 'From: no-reply@unep-wcmc.org';
 
     $redirect_url = '';
 
