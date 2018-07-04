@@ -1,3 +1,9 @@
+### BETA v0.3 Release
+
+**Amend content**
+
+* Add 'Coming soon' next to incomplete themes
+
 ### BETA v0.2 Release
 
 **Iframe interaction**
