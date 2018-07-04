@@ -7,7 +7,17 @@
 	text-align: center;
 
 	.footer {
-		padding: 10px;
+		padding: 20px;
+
+		position: relative;
+
+		&__logo {
+			width: auto; height: 40px;
+			
+			position: absolute;
+			top: 12px;
+			right: 20px;
+		}
 	}
 
 	p {
