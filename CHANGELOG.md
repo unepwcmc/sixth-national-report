@@ -1,3 +1,14 @@
+### BETA v0.4 Release
+
+**Amend content**
+
+* Update section 4 of FAQ
+* Update copyright
+
+**Resources**
+
+* Update jquery url to use https
+
 ### BETA v0.3 Release
 
 **Amend content**
