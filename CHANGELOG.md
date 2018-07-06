@@ -1,3 +1,14 @@
+### BETA v0.5 Release
+
+**Amend content**
+
+* Add title in support page
+* Add mapX logo in the footer and run Grunt dist
+* Fix mapx urls
+* Update about text
+* Remove coming soon from PA
+* Update walktrhough
+
 ### BETA v0.4 Release
 
 **Amend content**
