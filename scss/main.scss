@@ -38,6 +38,8 @@ $media-expressions: (
 @import 'layouts/common';
 @import 'layouts/footer';
 
+@import 'components/_mailchimp';
+
 html {
 	height: 100%;
 }
