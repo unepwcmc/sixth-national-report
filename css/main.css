@@ -1916,6 +1916,11 @@ li.fancybox-thumbs-loading {
 	max-height: 100px;
 }
 
+.partner-block .about-logo--svg {
+	width: auto;
+	height: 100px;
+}
+
 .partner-block .text-holder {
 	max-width: 795px;
 	margin: 0 auto;
