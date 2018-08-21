@@ -2872,7 +2872,7 @@ h1 {
 }
 
 .sidebar-scroll {
-	height: 100%;
+	height: calc(100% - 59px);
 	overflow-y: scroll;
 	padding-bottom: 59px;
 }
