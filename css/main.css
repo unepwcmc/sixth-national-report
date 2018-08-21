@@ -2710,8 +2710,6 @@ h1 {
 }
 
 #footer {
-	outline-style: groove;
-	display: table-footer-group;
 	height: 1%;
 	background: #24262b;
 	color: #fff;
