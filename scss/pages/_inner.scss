@@ -141,6 +141,8 @@
 		max-width: 485px;
 		padding: 9px 0;
 		width: 100%;
+
+		.btn { width: 179px; }
 	}
 
 	.input-wrap {
@@ -189,7 +191,6 @@
 		border:none;
 		margin-top: 20px;
 		padding: 13px 18px;
-		width: 179px;
 		border-radius: 2px;
 	}
 }
