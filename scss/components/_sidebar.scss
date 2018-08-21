@@ -1,3 +1,6 @@
+//--------------------------------------------------
+// sidebar
+//--------------------------------------------------
 #main {
   #sidebar{
     width:337px;
@@ -34,19 +37,19 @@
   }
 
   .sidebar-content {
-    max-height: calc(100vh);
+    height: 100%;
     overflow: hidden;
-    overflow-y: auto;
   }
 
   .title-wrap {
     .title {
       color: $white;
       font-size: 15px;
+      font-weight: bold;
       line-height: 1.2;
       display: block;
       padding: 8px 31px 8px 18px;
-      margin: 0 0 9px;
+      margin: 14px 0 9px 0;
     }
 
     .sidebar-opener {
@@ -112,38 +115,46 @@
     }
   }
 }
-}
 
-.sidebar-active {
-  #main {
-    #content {
-      padding: 0 0 0 322px;
+.sidebar {
+  &-active {
+    #main {
+      #content {
+        padding: 0 0 0 322px;
+      }
+
+      #sidebar {
+        left: 0;
+
+        &:before {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
     }
 
-    #sidebar {
-      left: 0;
+    .info-list {
+      margin-bottom: 30px;
 
-      &:before {
-        opacity: 0;
-        visibility: hidden;
+      li {
+        .accordion-item {
+          border-color:rgba(#979797,0.61);
+        }
+      }
+    }
+
+    #main .header-wrap .sidebar-opener {
+      right: -23px;
+
+      &:after {
+        width: 27px;
       }
     }
   }
 
-  .info-list {
-    li {
-      .accordion-item {
-        border-color:rgba(#979797,0.61);
-      }
-    }
-  }
-
-  #main .header-wrap .sidebar-opener {
-    right: -23px;
-
-    &:after {
-      width: 27px;
-    }
+  &-scroll {
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 59px;
   }
 }
-
