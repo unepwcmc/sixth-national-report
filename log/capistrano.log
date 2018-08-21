@@ -658,3 +658,147 @@
   INFO [973715fd] Running /usr/bin/env echo "Branch master (at e85fc11be9a71fa068988bfb2a47d86adde134f8) deployed as release 20180702100457 by stuart" >> /home/wcmc/sixth-national-report/revisions.log as wcmc@web-staging.linode.unep-wcmc.org
  DEBUG [973715fd] Command: cd /home/wcmc/sixth-national-report/releases && /usr/bin/env echo "Branch master (at e85fc11be9a71fa068988bfb2a47d86adde134f8) deployed as release 20180702100457 by stuart" >> /home/wcmc/sixth-national-report/revisions.log
   INFO [973715fd] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-15 14:03:59 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [de424c55] Running /usr/bin/env mkdir -p /tmp as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [de424c55] Command: /usr/bin/env mkdir -p /tmp
+  INFO [de424c55] Finished in 0.755 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh 100.0%
+  INFO [434fe99f] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [434fe99f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh
+  INFO [434fe99f] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [b99ee058] Running /usr/bin/env mkdir -p /tmp as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [b99ee058] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b99ee058] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh 100.0%
+  INFO [92d6d127] Running /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [92d6d127] Command: /usr/bin/env chmod 700 /tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh
+  INFO [92d6d127] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [5e9159df] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [5e9159df] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [5e9159df] 	c58fe5ad12c77f3c571840ce70f86cd0768f7c08	HEAD
+  INFO [5e9159df] Finished in 2.565 seconds with exit status 0 (successful).
+  INFO [b951a668] Running /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [b951a668] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git ls-remote git@github.com:unepwcmc/sixth-national-report.git HEAD )
+ DEBUG [b951a668] 	c58fe5ad12c77f3c571840ce70f86cd0768f7c08	HEAD
+  INFO [b951a668] Finished in 3.584 seconds with exit status 0 (successful).
+  INFO [30259477] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [30259477] Command: /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/shared /home/wcmc/sixth-national-report/releases
+  INFO [30259477] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [f51fa34f] Running [ -f /home/wcmc/sixth-national-report/current/REVISION ] as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [f51fa34f] Command: [ -f /home/wcmc/sixth-national-report/current/REVISION ]
+ DEBUG [f51fa34f] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [a592d986] Running /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [a592d986] Command: /usr/bin/env cat /home/wcmc/sixth-national-report/current/REVISION 2>/dev/null
+ DEBUG [a592d986] 	39e0ce2d7183ae2a7806f888b37056e115c171ab
+ DEBUG [a592d986] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [155a2a5b] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [155a2a5b] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [155a2a5b] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [1b08e6c5] Running [ -f /home/wcmc/sixth-national-report/repo/HEAD ] as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [1b08e6c5] Command: [ -f /home/wcmc/sixth-national-report/repo/HEAD ]
+ DEBUG [1b08e6c5] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/wcmc/sixth-national-report/repo
+ DEBUG [3a04a190] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [3a04a190] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [3a04a190] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [6f806364] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [6f806364] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [6f806364] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [3de34351] Running /usr/bin/env git remote update --prune as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [3de34351] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3de34351] 	Fetching origin
+ DEBUG [3de34351] 	remote: Counting objects: 4, done.[K
+remote: Compressing objects:  25% (1/4)   [Kremote: Compressing objects:  50% (2/4)   [K
+ DEBUG [3de34351] 	remote: Compressing objects:  75% (3/4)   [Kremote: Compressing objects: 100% (4/4)   [Kremote: Compressing objects: 100% (4/4), done.[K
+ DEBUG [3de34351] 	Unpacking objects:  25% (1/4)   
+ DEBUG [3de34351] 	Unpacking objects:  50% (2/4)   
+ DEBUG [3de34351] 	Unpacking objects:  75% (3/4)   
+ DEBUG [3de34351] 	Unpacking objects: 100% (4/4)   
+ DEBUG [3de34351] 	Unpacking objects: 100% (4/4), done.
+ DEBUG [3de34351] 	remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0[K
+ DEBUG [3de34351] 	From github.com:unepwcmc/sixth-national-report
+   586ebf1..c58fe5a  develop    -> develop
+ DEBUG [3de34351] 	   39e0ce2..c58fe5a  master     -> master
+ DEBUG [3de34351] 	 * [new ref]         refs/pull/12/head -> refs/pull/12/head
+  INFO [3de34351] Finished in 1.569 seconds with exit status 0 (successful).
+ DEBUG [57226a6b] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [57226a6b] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [57226a6b] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [368e4f70] Running /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [368e4f70] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git remote set-url origin git@github.com:unepwcmc/sixth-national-report.git )
+  INFO [368e4f70] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [26a115a1] Running /usr/bin/env git remote update --prune as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [26a115a1] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [26a115a1] 	Fetching origin
+  INFO [26a115a1] Finished in 1.297 seconds with exit status 0 (successful).
+ DEBUG [f86a2f18] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [f86a2f18] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [f86a2f18] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [6869c10f] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180815130407 as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [6869c10f] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180815130407 )
+  INFO [6869c10f] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [d015f699] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180815130407 as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [d015f699] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180815130407 )
+  INFO [d015f699] Finished in 0.118 seconds with exit status 0 (successful).
+ DEBUG [079a627a] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [079a627a] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [079a627a] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [5fbcc6c2] Running /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180815130407 as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [5fbcc6c2] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env mkdir -p /home/wcmc/sixth-national-report/releases/20180815130407 )
+  INFO [5fbcc6c2] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [b5f1990c] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180815130407 as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [b5f1990c] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/wcmc/sixth-national-report/releases/20180815130407 )
+  INFO [b5f1990c] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [d3a8ad96] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [d3a8ad96] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [d3a8ad96] Finished in 0.078 seconds with exit status 0 (successful).
+ DEBUG [fc008299] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [fc008299] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [fc008299] 	c58fe5ad12c77f3c571840ce70f86cd0768f7c08
+ DEBUG [fc008299] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [b28430e5] Running if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [b28430e5] Command: if test ! -d /home/wcmc/sixth-national-report/repo; then echo "Directory does not exist '/home/wcmc/sixth-national-report/repo'" 1>&2; false; fi
+ DEBUG [b28430e5] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [5497056f] Running /usr/bin/env git rev-list --max-count=1 master as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [5497056f] Command: cd /home/wcmc/sixth-national-report/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sixth-national-report-staging-stacytalbot.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5497056f] 	c58fe5ad12c77f3c571840ce70f86cd0768f7c08
+ DEBUG [5497056f] Finished in 0.081 seconds with exit status 0 (successful).
+ DEBUG [0d625c86] Running if test ! -d /home/wcmc/sixth-national-report/releases/20180815130407; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180815130407'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [0d625c86] Command: if test ! -d /home/wcmc/sixth-national-report/releases/20180815130407; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases/20180815130407'" 1>&2; false; fi
+ DEBUG [0d625c86] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [763247fa] Running /usr/bin/env echo "c58fe5ad12c77f3c571840ce70f86cd0768f7c08" >> REVISION as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [763247fa] Command: cd /home/wcmc/sixth-national-report/releases/20180815130407 && /usr/bin/env echo "c58fe5ad12c77f3c571840ce70f86cd0768f7c08" >> REVISION
+  INFO [763247fa] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [60106cd5] Running /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180815130407 /home/wcmc/sixth-national-report/releases/current as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [60106cd5] Command: /usr/bin/env ln -s /home/wcmc/sixth-national-report/releases/20180815130407 /home/wcmc/sixth-national-report/releases/current
+  INFO [60106cd5] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [39a04cf1] Running /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [39a04cf1] Command: /usr/bin/env mv /home/wcmc/sixth-national-report/releases/current /home/wcmc/sixth-national-report
+  INFO [39a04cf1] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [c47cbe84] Running sudo service nginx reload as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [c47cbe84] Command: sudo service nginx reload
+ DEBUG [c47cbe84] 	 * Reloading nginx configuration nginx       
+ DEBUG [c47cbe84] 	[80G
+ DEBUG [c47cbe84] 	 
+ DEBUG [c47cbe84] 	[74G[ OK ]
+  INFO [c47cbe84] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [b2a694c2] Running /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [b2a694c2] Command: /usr/bin/env ls -x /home/wcmc/sixth-national-report/releases
+ DEBUG [b2a694c2] 	20180704142643	20180704144409	20180704151621	20180704152845	20180709142253
+20180815130407
+ DEBUG [b2a694c2] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on web-production.linode.unep-wcmc.org
+  INFO [e2ae3d49] Running /usr/bin/env rm -rf /home/wcmc/sixth-national-report/releases/20180704142643 as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [e2ae3d49] Command: /usr/bin/env rm -rf /home/wcmc/sixth-national-report/releases/20180704142643
+  INFO [e2ae3d49] Finished in 0.084 seconds with exit status 0 (successful).
+ DEBUG [9b4bd9ac] Running if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [9b4bd9ac] Command: if test ! -d /home/wcmc/sixth-national-report/releases; then echo "Directory does not exist '/home/wcmc/sixth-national-report/releases'" 1>&2; false; fi
+ DEBUG [9b4bd9ac] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [73442458] Running /usr/bin/env echo "Branch master (at c58fe5ad12c77f3c571840ce70f86cd0768f7c08) deployed as release 20180815130407 by stacytalbot" >> /home/wcmc/sixth-national-report/revisions.log as wcmc@web-production.linode.unep-wcmc.org
+ DEBUG [73442458] Command: cd /home/wcmc/sixth-national-report/releases && /usr/bin/env echo "Branch master (at c58fe5ad12c77f3c571840ce70f86cd0768f7c08) deployed as release 20180815130407 by stacytalbot" >> /home/wcmc/sixth-national-report/revisions.log
+  INFO [73442458] Finished in 0.136 seconds with exit status 0 (successful).
