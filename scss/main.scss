@@ -38,6 +38,9 @@ $media-expressions: (
 @import 'layouts/common';
 @import 'layouts/footer';
 
+@import 'components/_mailchimp';
+@import 'components/sidebar';
+
 html {
 	height: 100%;
 }
@@ -45,16 +48,13 @@ html {
 body {
 	min-width: 1270px;
 	background:  #24262B;
-	display: table;
 	height: 100%;
 	width: 100%;
-	table-layout: fixed;
 }
 
 #wrapper {
 	position: relative;
 	overflow: hidden;
-	display: table-cell;
 	margin: 0 auto;
 }
 
