@@ -656,6 +656,230 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
+.flex,
+.flex-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-inline {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+.flex-row {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.flex-row-reverse {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+.flex-column {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.flex-column-reverse {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+}
+
+.flex-nowrap {
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.flex-wrap {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+	-ms-flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
+}
+
+.flex-1 {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.flex-grow {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.flex-no-grow {
+	-webkit-box-flex: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+}
+
+.flex-shrink {
+	flex-shirnk: 1;
+}
+
+.flex-no-shrink {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+.flex-h-start {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.flex-h-center,
+.flex-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.flex-h-between {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.flex-h-around {
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.flex-h-end {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.flex-hs-start {
+	justify-self: flex-start;
+}
+
+.flex-hs-center {
+	justify-self: center;
+}
+
+.flex-hs-between {
+	justify-self: space-between;
+}
+
+.flex-hs-around {
+	justify-self: space-around;
+}
+
+.flex-hs-end {
+	justify-self: flex-end;
+	margin-left: auto;
+}
+
+.flex-v-start {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.flex-v-end {
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.flex-v-center,
+.flex-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.flex-v-baseline {
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+}
+
+.flex-v-stretch {
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.flex-vs-start {
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+
+.flex-vs-center {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+.flex-vs-baseline {
+	-ms-flex-item-align: baseline;
+	align-self: baseline;
+}
+
+.flex-vs-stretch {
+	-ms-flex-item-align: stretch;
+	-ms-grid-row-align: stretch;
+	align-self: stretch;
+}
+
+.flex-vs-end {
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+	margin-top: auto;
+}
+
+.flex-vm-start {
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+}
+
+.flex-vm-end {
+	-ms-flex-line-pack: end;
+	align-content: flex-end;
+}
+
+.flex-vm-center {
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+
+.flex-vm-between {
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+}
+
+.flex-vm-around {
+	-ms-flex-line-pack: distribute;
+	align-content: space-around;
+}
+
+.flex-vm-stretch {
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+}
+
 .icon-stack:before {
 	content: "\e900";
 }
@@ -1927,7 +2151,7 @@ li.fancybox-thumbs-loading {
 }
 
 .partner-block .text-holder .heading-text {
-	max-width: 340px;
+	max-width: 50%;
 }
 
 .heading-text {
@@ -2787,6 +3011,20 @@ h1 {
 	min-width: 147px;
 	height: auto;
 	display: inline-block;
+}
+
+.ul-no-styling {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ul__li {
+	margin-bottom: 40px;
+}
+
+.ul__content {
+	margin-left: 16px;
 }
 
 #main #sidebar {
