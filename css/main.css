@@ -2826,7 +2826,7 @@ h1 {
 
 #main .title-wrap .title {
 	color: #fff;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: bold;
 	line-height: 1.2;
 	display: block;
@@ -2940,6 +2940,38 @@ h1 {
 	height: calc(100% - 59px);
 	overflow-y: scroll;
 	padding-bottom: 59px;
+}
+
+.accordion-item {
+	color: #fff;
+}
+
+.accordion-item--theme-1 {
+	background-color: #2186a2;
+}
+
+.accordion-item--theme-1:after {
+	background-color: #2186a2;
+}
+
+.accordion-item--theme-1:hover:after {
+	background-color: #186378;
+}
+
+.accordion-item--theme-2 {
+	background-color: #1c7c60;
+}
+
+.accordion-item--theme-2:after {
+	background-color: #1c7c60;
+}
+
+.accordion-item--theme-2:hover:after {
+	background-color: #135240;
+}
+
+.accordion__content {
+	font-size: 13px;
 }
 
 html {
