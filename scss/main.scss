@@ -29,6 +29,7 @@ $media-expressions: (
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/forms';
+@import 'base/flexbox';
 
 @import 'vendors/icomoon';
 @import 'vendors/jcf';
@@ -39,6 +40,7 @@ $media-expressions: (
 @import 'layouts/footer';
 
 @import 'components/_mailchimp';
+@import 'components/lists';
 @import 'components/sidebar';
 @import 'components/accordion';
 

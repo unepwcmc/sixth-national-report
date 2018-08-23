@@ -1,5 +1,5 @@
 .partner-block {
-	padding: 86px 0;
+	margin: 86px 0;
 	font-size: 15px;
 	line-height: 1.7;
 	
@@ -13,6 +13,7 @@
 		flex-wrap:wrap;
 		justify-content:space-around;
 		align-items:center;
+		margin-top: 50px;
 
 		li {
 			padding: 0 15px;
@@ -22,6 +23,8 @@
 
 	.about-logo {
 		max-width: 200px; max-height: 100px;
+
+		&--svg { width: auto; height: 100px; }
 	}
 
 	.text-holder {
@@ -29,7 +32,7 @@
 		margin: 0 auto;
 
 		.heading-text {
-			max-width: 340px;
+			max-width: 50%;
 		}
 	}
 }
