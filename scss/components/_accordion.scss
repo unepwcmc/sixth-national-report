@@ -1,0 +1,32 @@
+//--------------------------------------------------
+// accordion
+//--------------------------------------------------
+.accordion {
+
+//--------------------------------------------------
+// accordion item
+//--------------------------------------------------
+  &-item {
+    color: $white;
+
+    &--theme-1 {
+      background-color: #2186a2;
+
+      &:after { background-color: #2186a2; }
+
+      &:hover:after { background-color: darken(#2186a2, 10%); }
+    }
+
+    &--theme-2 {
+      background-color: #1c7c60; 
+
+      &:after { background-color: #1c7c60; }
+
+      &:hover:after { background-color: darken(#1c7c60, 10%); }
+    }
+  }
+
+    &__content {
+      font-size: 13px;
+    }
+}

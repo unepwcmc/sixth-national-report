@@ -119,71 +119,71 @@ h1 {
 	@extend %listreset;
 	overflow: hidden;
 	overflow-y: auto;
+}
 
-	.accordion-item,
-	.info-list__item {
-		display: block;
-		font-size: 15px;
-		display: block;
-		transition:all 0.5s ease;
-		position: relative;
-		z-index: 1;
-		position: relative;
-		padding-right: 66px;
-		border-bottom: solid 1px rgba(151, 151, 151, .61);
+.accordion-item,
+.info-list__item {
+	display: block;
+	font-size: 15px;
+	display: block;
+	transition:all 0.5s ease;
+	position: relative;
+	z-index: 1;
+	position: relative;
+	padding-right: 66px;
+	border-bottom: solid 1px rgba(151, 151, 151, .61);
 
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		background-color: #156269;
+		z-index: -1;
+		@include animate(all,0.3s);
+	}
+
+	&:hover {
 		&:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			width: 0;
-			background: #156269;
-			z-index: -1;
-			@include animate(all,0.3s);
+			width: 100%;
+			right: 0;
+		}
+	}
+
+	.accordion-opener,
+	.info-list__a {
+		text-decoration: none;
+		padding: 16px 0 16px 18px;
+		color: $white;
+		display: block;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&.active {
+		.accordion-item {
+			border-color:rgba(#979797,0.61);
 		}
 
-		&:hover {
+		a {
+			border-color: transparent;
 			&:after {
 				width: 100%;
 				right: 0;
 			}
-		}
 
-		.accordion-opener,
-		.info-list__a {
-			text-decoration: none;
-			padding: 16px 0 16px 18px;
-			color: $white;
-			display: block;
-
-			&:focus {
-				outline: none;
-			}
-		}
-
-		&.active {
-			.accordion-item {
-				border-color:rgba(#979797,0.61);
-			}
-
-			a {
-				border-color: transparent;
-				&:after {
-					width: 100%;
-					right: 0;
-				}
-
-				&:before {
-					content: '';
-					position: absolute;
-					top: -1px;
-					left: 0;
-					right: 0;
-					background: #156269;
-					height: 1px;
-				}
+			&:before {
+				content: '';
+				position: absolute;
+				top: -1px;
+				left: 0;
+				right: 0;
+				background-color: #156269;
+				height: 1px;
 			}
 		}
 	}
@@ -387,57 +387,6 @@ h1 {
 	}
 }
 
-.accordion {
-	li {
-
-		&.active {
-			.accordion-item {
-				background: #156269;
-			}
-		}
-	}
-
-	.slide {
-		background: #156269;
-		padding: 13px 30px 22px;
-		font-size: 	13px;
-		line-height: 1.45;
-		color: $white;
-
-		p {
-			margin: 0 0 16px;
-		}
-
-		ul { margin-bottom: 14px; }
-
-		li { 
-			font-size: 13px; 
-
-			display: list-item;
-		}
-	}
-
-	.layers-list {
-		@extend %listreset;
-
-		li {
-			position: relative;
-			padding: 0 7px;
-			margin: 0 0 10px;
-
-			&:after {
-				@include size(2px);
-				content: '';
-				position: absolute;
-				top: 11px;
-				left: 0;
-				border-radius: 	50%;
-				overflow: hidden;
-				background:	$white;
-			}
-		}
-	}
-}
 #popup-on-load {
 	.fancybox-close-small {
 		display: none;
