@@ -153,8 +153,8 @@
   }
 
   &-scroll {
-    height: calc(100% - 59px);
+    height: calc(100% - #{$footer-height});
     overflow-y: scroll;
-    padding-bottom: 59px;
+    padding-bottom: $footer-height;
   }
 }

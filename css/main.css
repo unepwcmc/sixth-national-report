@@ -484,6 +484,10 @@ th {
 	overflow: hidden;
 }
 
+.no-margin {
+	margin: 0;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -2956,27 +2960,28 @@ h1 {
 }
 
 #footer {
-	height: 1%;
 	background: #24262b;
 	color: #fff;
-	text-align: center;
 }
 
 #footer .footer {
-	padding: 20px;
-	position: relative;
+	padding: 0 20px;
+	height: 59px;
 }
 
 #footer .footer__logo {
 	width: auto;
 	height: 40px;
-	position: absolute;
-	top: 12px;
-	right: 20px;
 }
 
-#footer p {
-	margin: 0;
+#footer .footer__link {
+	color: #fff;
+	margin: 0 6px;
+	text-decoration: none;
+}
+
+#footer .footer__link:hover {
+	text-decoration: underline;
 }
 
 #mailchimp {
