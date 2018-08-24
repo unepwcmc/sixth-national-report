@@ -41,7 +41,7 @@ $placeholder-color: $gray !default;
 
 // Headers
 $h1-font-size: 30px !default;
-$h2-font-size: 27px !default;
+$h2-font-size: 20px;
 $h3-font-size: 24px !default;
 $h4-font-size: 21px !default;
 $h5-font-size: 17px !default;
@@ -52,3 +52,6 @@ $headings-color: inherit !default;
 
 
 $animation-speed: 0.3s;
+
+// Footer
+$footer-height: 59px;
