@@ -3,19 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=1270, initial-scale=1.0">
+	<meta name="description" content="The UN Biodiversity Lab provides a free, customized, online spatial analysis platform to support conservation and development decision-making around the globe.">
+  <meta name="keywords" content="UN Biodiversity Lab, conservation, biodiversity, 6NR, Sixth National Report, CBD, spatial">
 	<title>UNBiodiversity Lab</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link media="all" rel="stylesheet" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
 	<script src="js/jquery.main.js" defer></script>
+	
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#24262b">
+	<meta name="theme-color" content="#24262b">
 </head>
 <body>
 	<div id="wrapper">
 		<header id="header">
 			<div class="content-wrap">
 				<div class="logo-wrap">
-					<a href="index.html"><img src="images/logo.png" alt="UNBiodiversity Lab"></a>
+					<a href="index.html"><img src="images/logos/logo.png" alt="UNBiodiversity Lab"></a>
 				</div>
 				<nav id="nav">
 					<ul class="menu">
@@ -27,7 +38,7 @@
 				</nav>
 				<div class="right-block">
 					<div class="btn-wrap">
-						<a href="sandboxes.html" class="btn primary">My sandboxes</a>
+						<a href="projects.html" class="btn primary">My projects</a>
 					</div>
 					<!-- <div class="language-selector">
 						<span class="language-opener"><span class="language">English</span> <span class="icon-down"></span></span>
@@ -133,8 +144,8 @@
 				<div class="content-holder">
 					<div class="info-wrap">
 						<div class="text">
-							<h2>Welcome to your sandbox </h2>
-							<p>Welcome to your Sandbox! Here you will have access to additional data layers, analytical tools, and the ability to upload data, download data, export and share your maps. Sandboxes can be created for each project you are working on. You can also invite or be invited to the sandboxes of colleagues for collaboration and co-design.</p>
+							<h2>Welcome to your project </h2>
+							<p>Welcome to your Project! Here you will have access to additional data layers, analytical tools, and the ability to upload data, download data, export and share your maps. Projects can be created for each project you are working on. You can also invite or be invited to the projects of colleagues for collaboration and co-design.</p>
 							<a href="#" class="btn">Start <span class="icon-right"></span></a>
 						</div>
 					</div>
@@ -228,12 +239,14 @@
 		</div>
 	</div>
 	<footer id="footer">
-		<div class="footer">
-			<div class="container">
-				<p>Copyright 2018 © United Nations</p>
-				<img src="images/mapx-logo.png" alt="Powered by MapX" class="footer__logo">
-			</div>
-		</div>
-	</footer>
+    <div class="footer container flex flex-h-between flex-v-center">
+      <div>
+        <a href="/privacy-policy.html" title="View the Privacy Policy" class="footer__link">Privacy Policy</a>
+        <a href="/terms-of-use.html" title="View the Terms of Use" class="footer__link">Terms of Use</a>
+      </div>
+      <p class="no-margin">Copyright 2018 © United Nations</p>
+      <img src="images/logos/powered-by-mapx.png" alt="Powered by MapX" class="footer__logo">
+    </div>
+  </footer>
 </body>
 </html>

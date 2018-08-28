@@ -22,6 +22,7 @@ $media-expressions: (
 @import 'vendors/include-media';
 @import 'vendors/normalize';
 
+@import 'base/base';
 @import 'base/functions';
 @import 'base/variables';
 @import 'base/mixins';
@@ -29,6 +30,7 @@ $media-expressions: (
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/forms';
+@import 'base/flexbox';
 
 @import 'vendors/icomoon';
 @import 'vendors/jcf';
@@ -38,7 +40,10 @@ $media-expressions: (
 @import 'layouts/common';
 @import 'layouts/footer';
 
+@import 'components/_mailchimp';
+@import 'components/lists';
 @import 'components/sidebar';
+@import 'components/accordion';
 
 html {
 	height: 100%;
@@ -47,16 +52,13 @@ html {
 body {
 	min-width: 1270px;
 	background:  #24262B;
-	display: table;
 	height: 100%;
 	width: 100%;
-	table-layout: fixed;
 }
 
 #wrapper {
 	position: relative;
 	overflow: hidden;
-	display: table-cell;
 	margin: 0 auto;
 }
 
