@@ -2970,8 +2970,9 @@ h1 {
 }
 
 #footer .footer__logo {
+	margin-left: 18px;
 	width: auto;
-	height: 40px;
+	height: 36px;
 }
 
 #footer .footer__link {
