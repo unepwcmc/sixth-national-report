@@ -119,7 +119,6 @@ h1 {
 	overflow: hidden;
 	overflow-y: auto;
 
-	.accordion-item,
 	.info-list__item {
 		display: block;
 		font-size: 15px;
@@ -150,7 +149,6 @@ h1 {
 			}
 		}
 
-		.accordion-opener,
 		.info-list__a {
 			text-decoration: none;
 			padding: 16px 0 16px 18px;
@@ -159,30 +157,6 @@ h1 {
 
 			&:focus {
 				outline: none;
-			}
-		}
-
-		&.active {
-			.accordion-item {
-				border-color:rgba(#979797,0.61);
-			}
-
-			a {
-				border-color: transparent;
-				&:after {
-					width: 100%;
-					right: 0;
-				}
-
-				&:before {
-					content: '';
-					position: absolute;
-					top: -1px;
-					left: 0;
-					right: 0;
-					background: #156269;
-					height: 1px;
-				}
 			}
 		}
 	}
@@ -387,35 +361,6 @@ h1 {
 }
 
 .accordion {
-	li {
-
-		&.active {
-			.accordion-item {
-				background: #156269;
-			}
-		}
-	}
-
-	.slide {
-		background: #156269;
-		padding: 13px 30px 22px;
-		font-size: 	13px;
-		line-height: 1.45;
-		color: $white;
-
-		p {
-			margin: 0 0 16px;
-		}
-
-		ul { margin-bottom: 14px; }
-
-		li { 
-			font-size: 13px; 
-
-			display: list-item;
-		}
-	}
-
 	.layers-list {
 		@extend %listreset;
 

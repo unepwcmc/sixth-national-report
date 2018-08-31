@@ -1,0 +1,8 @@
+.container--small, .container--medium {
+  margin: 0 auto; }
+
+.container--small {
+  width: 548px; }
+
+.container--medium {
+  width: 795px; }
