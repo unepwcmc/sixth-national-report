@@ -58,8 +58,6 @@
       }
     }
   }
-  
-  .slide { padding: 13px 30px 22px 18px; }
 
   .header-wrap {
     padding: 23px 33px 15px;
@@ -129,16 +127,6 @@
         &:before {
           opacity: 0;
           visibility: hidden;
-        }
-      }
-    }
-
-    .info-list {
-      margin-bottom: 30px;
-
-      li {
-        .accordion-item {
-          border-color:rgba(#979797,0.61);
         }
       }
     }
