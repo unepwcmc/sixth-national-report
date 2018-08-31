@@ -13,7 +13,7 @@ jQuery(function() {
 // Used to remove popup window asking if really want to lave when changing iframe URL
 window.onbeforeunload = null;
 
-window.base_url = 'https://mvp.app.mapx.org/?lockProject=true&';
+window.base_url = 'https://app.mapx.org/?lockProject=true&';
 window.country = 'MX-XNI-RMZ-KKL-FMS-DVH'
 window.themes = [];
 
