@@ -48,7 +48,7 @@ function initIframeChange() {
 	});
 
 
-	jQuery('.info-list .switch').on('click', function(e){
+	jQuery('[toggle]').on('click', function(e){
 		e.preventDefault();
 		toggle = jQuery(this);
 		theme = toggle.attr('data-theme');
