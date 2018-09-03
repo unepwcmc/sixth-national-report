@@ -82,14 +82,14 @@ h1 {
 	}
 }
 
-#main{
+.main{
 	width: 100%;
 	background: $white;
 	overflow: hidden;
 	position: relative;
 	min-height: calc(100vh - 82px - #{$footer-height});
 
-	#content{
+	.content{
 		padding-left: 25px;
 		width: 100%;
 		@include animate(all, 0.5s);

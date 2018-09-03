@@ -1,137 +1,133 @@
 //--------------------------------------------------
 // sidebar
 //--------------------------------------------------
-#main {
-  #sidebar{
-    width:337px;
-    background: #1C757D;
+.sidebar{
+  width:337px;
+  background: #1C757D;
+  position: absolute;
+  top: 0;
+  left:-297px;
+  bottom: 0;
+  z-index: 99;
+  @include animate(all, 0.5s);
+
+  &:after {
+    content: '';
     position: absolute;
     top: 0;
-    left:-297px;
+    left: 0;
+    right: 0;
+    background: #1C757D;
+    box-shadow: 5px 0 4px 0 rgba(0, 0, 0, 0.5);
+    bottom: -9999px;
+    z-index: -1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 51px;
+    right: 0;
     bottom: 0;
-    z-index: 99;
-    @include animate(all, 0.5s);
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #1C757D;
-      box-shadow: 5px 0 4px 0 rgba(0, 0, 0, 0.5);
-      bottom: -9999px;
-      z-index: -1;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 51px;
-      right: 0;
-      bottom: 0;
-      width: 35px;
-      background:transparent;
-      z-index: 999;
-    }
+    width: 35px;
+    background:transparent;
+    z-index: 999;
   }
+}
 
-  .sidebar-content {
-    height: 100%;
-    overflow: hidden;
-  }
+.sidebar-content {
+  height: 100%;
+  overflow: hidden;
+}
 
-  .title-wrap {
-    .title {
-      color: $white;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 1.2;
-      display: block;
-      padding: 8px 31px 8px 18px;
-      margin: 14px 0 9px 0;
-    }
-
-    .sidebar-opener {
-      &:after {
-        width: 22px;
-      }
-    }
-  }
-
-  .header-wrap {
-    padding: 23px 33px 15px;
-
-    .sidebar-opener {
-      @include animate(all,0.5s);
-      font-size: 32px;
-      right: -37px;
-      width: 50px;
-      height: 50px;
-      outline: none;
-    }
-
-    .title {
-      color: $white;
-      font-size: 14px;
-      line-height: 1.2;
-      display: block;
-      margin: 0 0 10px;
-    }
+.title-wrap {
+  .title {
+    color: $white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: block;
+    padding: 8px 31px 8px 18px;
+    margin: 14px 0 9px 0;
   }
 
   .sidebar-opener {
-    @include size(42px,47px);
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #1C757D;
-    text-decoration: none;
-    color: $white;
-    display: flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
-    font-size: 26px;
-    z-index: 9;
-    @include animate(background , 0.3s);
-
-    &:hover {
-      background:  #156269;
-    }
-
     &:after {
-      @include animate(width,0.35s);
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 13px;
-      height: 5px;
-      background:#1C757D;
-      pointer-events:none;
+      width: 22px;
     }
+  }
+}
+
+.header-wrap {
+  padding: 23px 33px 15px;
+
+  .sidebar-opener {
+    @include animate(all,0.5s);
+    font-size: 32px;
+    right: -37px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+  }
+
+  .title {
+    color: $white;
+    font-size: 14px;
+    line-height: 1.2;
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+.sidebar-opener {
+  @include size(42px,47px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1C757D;
+  text-decoration: none;
+  color: $white;
+  display: flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  font-size: 26px;
+  z-index: 9;
+  @include animate(background , 0.3s);
+
+  &:hover {
+    background:  #156269;
+  }
+
+  &:after {
+    @include animate(width,0.35s);
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 13px;
+    height: 5px;
+    background:#1C757D;
+    pointer-events:none;
   }
 }
 
 .sidebar {
   &-active {
-    #main {
-      #content {
-        padding: 0 0 0 322px;
-      }
+    .content--flex {
+      padding-left: 322px;
+    }
 
-      #sidebar {
-        left: 0;
+    .sidebar {
+      left: 0;
 
-        &:before {
-          opacity: 0;
-          visibility: hidden;
-        }
+      &:before {
+        opacity: 0;
+        visibility: hidden;
       }
     }
 
-    #main .header-wrap .sidebar-opener {
+    .header-wrap .sidebar-opener {
       right: -23px;
 
       &:after {
@@ -144,5 +140,12 @@
     height: calc(100% - #{$footer-height});
     overflow-y: scroll;
     padding-bottom: $footer-height;
+  }
+
+//--------------------------------------------------
+// sidebar
+//--------------------------------------------------
+  &--small {
+    width: 40px;
   }
 }

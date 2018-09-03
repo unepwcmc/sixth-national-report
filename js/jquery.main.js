@@ -127,7 +127,7 @@ function initCustomForms() {
 function initMobileNav() {
 	jQuery('body').mobileNav({
 		menuActiveClass: 'sidebar-active',
-		menuOpener: '.sidebar-opener'
+		menuOpener: '.js-sidebar-opener'
 	});
 	jQuery('.language-selector').mobileNav({
 		menuActiveClass: 'active',
