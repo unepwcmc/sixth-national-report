@@ -12,7 +12,7 @@
 	}
 	
 	class sensToMail {
-		function __construct( $to = '', $subject = '', $fields, $headers = array(), $redirect_url = '/thankyou.html', $success_message = '', $email_object, $mime_types, $ajax = false ){
+		function __construct( $to = '', $subject = '', $fields, $headers = array(), $redirect_url = '', $success_message = '', $email_object, $mime_types, $ajax = false ){
 			$message = $this->getMessageContent( $fields );
 			
 			$attachments = $this->getMessageAttachments( $mime_types );

@@ -9,7 +9,7 @@
 
     $headers[] = 'From: no-reply@unep-wcmc.org';
 
-    $redirect_url = '';
+    $redirect_url = '/thankyou.html';
 
     $success_message = 'Message sent';
 
