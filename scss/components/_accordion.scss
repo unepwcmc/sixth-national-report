@@ -83,13 +83,20 @@
 // sidebar accordion
 //--------------------------------------------------
   &--sidebar {
-    background-color: #2186a2;
+    @include animate(all, 0.3s);
+    background-color: #1c757d;
     margin-bottom: 26px 30px;
 
-    .accordion {
+    .sidebar-active & { background-color: #2186a2; }
 
+    .accordion {
       &-item {
+        @include animate(all, 0.3s);
+        margin-right: 40px;
+
         &:hover:after { background-color: darken(#2186a2, 10%); }
+
+        .sidebar-active & { margin-right: 0; }
       }
 
       &__trigger {
