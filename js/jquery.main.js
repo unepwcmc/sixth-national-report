@@ -30,7 +30,7 @@ function initOpenLighbox() {
 }
 
 function initIframeChange() {
-	var iframe = jQuery('#content iframe');
+	var iframe = jQuery('[iframe]');
 
 	jQuery('#region').on('change', function(){
 		window.country = jQuery(this).val();
