@@ -629,8 +629,9 @@ function initAccordion() {
 						data: this.$form.serialize(),
 						success: function() {
 							self.$form.addClass(self.options.successSendClass);
-              if (self.$form.attr('id') === 'contact') {
-                window.location.href = '/thankyou.html'
+              redirect_url = self.$form.getAttribute('data-redirect');
+              if (redirect_url !== null) {
+                window.location.href = redirect_url
               }
 						}
 					});
