@@ -629,7 +629,7 @@ function initAccordion() {
 						data: this.$form.serialize(),
 						success: function() {
 							self.$form.addClass(self.options.successSendClass);
-              redirect_url = self.$form.getAttribute('data-redirect');
+              redirect_url = self.$form.attr('data-redirect');
               if (redirect_url !== null) {
                 window.location.href = redirect_url
               }
