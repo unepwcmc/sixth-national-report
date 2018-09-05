@@ -629,7 +629,7 @@ function initAccordion() {
 						data: this.$form.serialize(),
 						success: function() {
 							self.$form.addClass(self.options.successSendClass);
-              if (this.$form.attr('id') === 'contact') {
+              if (self.$form.attr('id') === 'contact') {
                 window.location.href = '/thankyou.html'
               }
 						}
