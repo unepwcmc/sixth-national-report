@@ -629,6 +629,10 @@ function initAccordion() {
 						data: this.$form.serialize(),
 						success: function() {
 							self.$form.addClass(self.options.successSendClass);
+              var redirect_url = self.$form.attr('data-redirect');
+              if (redirect_url !== null) {
+                window.location.href = redirect_url
+              }
 						}
 					});
 				}
