@@ -1,3 +1,7 @@
+### BETA v0.7 Release
+
+* Show all data views also when toggling buttons
+
 ### BETA v0.6 Release
 
 * Update support page text
