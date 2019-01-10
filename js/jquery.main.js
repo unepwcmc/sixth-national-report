@@ -40,10 +40,6 @@ function initIframeChange() {
     if(window.themes.length > 0) {
       url += '&collections=' + window.themes + '&noViews=false';
     }
-    else {
-      url += '&noViews=true';
-    }
-
 		iframe.attr('src', url);
 	});
 
@@ -73,10 +69,6 @@ function initIframeChange() {
       collections = window.themes.join(',');
       url += '&collections=' + collections + '&noViews=false';
     }
-    else {
-      url += '&noViews=true'
-    }
-
 		iframe.attr('src', url);
 	});
 }
