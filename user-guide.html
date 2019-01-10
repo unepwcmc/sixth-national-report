@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1270, initial-scale=1.0">
+  <meta name="description" content="The UN Biodiversity Lab provides a free, customized, online spatial analysis platform to support conservation and development decision-making around the globe.">
+  <meta name="keywords" content="UN Biodiversity Lab, conservation, biodiversity, 6NR, Sixth National Report, CBD, spatial">
+  <title>UNBiodiversity Lab</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link media="all" rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
+  <script src="js/jquery.main.js" defer></script>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#24262b">
+  <meta name="theme-color" content="#24262b">
+</head>
+<body class="sidebar-active">
+  <div id="wrapper">
+    <header id="header">
+      <div class="content-wrap">
+        <div class="logo-wrap">
+          <a href="index.html"><img src="images/logos/logo.png" alt="UNBiodiversity Lab"></a>
+        </div>
+        <nav id="nav">
+          <ul class="menu">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html">DATA</a></li>
+            <li><a href="https://www.mapx.org/success-stories/">STORIES</a></li>
+            <li class="active"><a href="user-guide.html">USER GUIDE</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+          </ul>
+        </nav>
+        <div class="right-block">
+          <div class="btn-wrap">
+            <a href="projects.html" class="btn primary">My Projects</a>
+          </div>
+          <!-- <div class="language-selector">
+            <span class="language-opener"><span class="language">English</span> <span class="icon-down"></span></span>
+            <div class="drop">
+              <ul class="languages">
+                <li><a href="#">English</a></li>
+                <li><a href="#">French</a></li>
+                <li><a href="#">Russian</a></li>
+                <li><a href="#">Japanese</a></li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="about-block image-wrap bg-image-overlay" style="background-image: url('images/about_hero.jpg');">
+        <div class="container">
+          <h2 class="style"><span>User Guide</span></h2>
+          <p>This animated user guide has been developed to walk you through the key tools and functions of the UN Biodiversity Lab. This includes basic navigation of the platform, and tasks that can be completed in the public data catalogue and by 6NR teams in their national projects. If you have any further questions, please visit our <a href="/support.html" title="Visit the support page">support page</a> or contact us at <a href="mailto:support@unbiodiversitylab.org" title="Email the support team">support@unbiodiversitylab.org</a>.</p>
+        </div>
+      </div>
+
+      <div class="support-block">
+        <div class="container">
+          <div class="box--white">
+            <h2>Public Data Catalogue</h2>
+
+            <ul class="accordion">
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How do I register or log-in?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/1-how-do-I-register-or-log-in.gif" alt="How do I register or log-in GIF">
+                  <p>Before you begin exploring the data, register for the UN Biodiversity Lab.</p>
+                  <ol>
+                    <li>Click the log-in icon in the top right corner of the toolbar and enter your email.</li>
+                    <li>You will receive a one-time use code via email. To keep your information secure, a randomly generated one-time code is how you will always log-in to the UN Biodiversity Lab. You should receive an email immediately from bot@mapx.org.</li>
+                    <li>Enter this code into the website and you are officially logged in. Using the data catalogue as a registered user gives you access to more datasets and functions, including the ability to download data.</li>
+                  </ol>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Adjusting the language and region</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/2-Adjusting-language-and-region.gif" alt="Adjusting the language and region GIF">
+                  <p>When you open the website, you will arrive directly in the data catalogue. You can find thematic titles related to five 2020 Aichi Biodiversity targets and associated themes on the left sidebar below the country selection drop down menu. You can select your language in the view list. Translated versions of the MapX interface are available in French and Spanish. To activate a theme, click the switch beside it to see the associated views. Click a button to display the view.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How do I find data?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/2.1-How-do-I-find-data.gif" alt="How do I find data? GIF">
+                  <p>When a switch is clicked the view list to the right will populate with data, with what we call views. Views have been created from source data layers and display one spatial variable of a data set.</p>
+                  <ol>
+                    <li>The views can be ordered by title, date, or searched by keyword.</li>
+                    <li>Clicking the “Filter activated views” button will remove all the views from the list except for the ones you have selected.</li>
+                  </ol>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/2.2-How-do-I-find-data.gif" alt="How do I find data? GIF">
+                  <p>At the bottom of the view list, you can filter views by component (the type of view); classes (keywords relating to the view); or collections (the theme or target that the view is associated with).</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How do I adjust the menus?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/3.1-How-do-I-adjust-the-menus.gif" alt="How do I adjust the menus? GIF">
+                  <ol>
+                    <li>Explore the map by clicking and dragging with your mouse, or using your keyboard keys.</li>
+                    <li>Zoom in and out using the mouse scroll, or the +/- buttons on the frame.</li>
+                    <li>Increase or shrink the size of the list of views within the frame by dragging the arrow in the corner at the bottom right of the legend.</li>
+                  </ol>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/3.2-How-do-I-adjust-the-menus.gif" alt="How do I adjust the menus? GIF">
+                  <p>Experiment with collapsing and expanding the left sidebar so that the map is full screen, or hiding the list of views using the view icon in the top toolbar.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">What do the button colors mean?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/4.1-What-do-the-button-colours-mean.png" alt="What do the button colors mean?">
+                  <p>The colour of the button denotes the type of data that created the view: purple for raster data and green for vector data. Vector and raster data are two fundamentally different ways of representing spatial data. Raster data is broadly thought of as data that represents things that exist on a range of values across space, such as a maps of temperature, land cover, population density, or the percent of canopy closure in a forest. The attribute of raster data is a value within a pixel (or grid cell) and can represent categorical values (such as a land cover classification) or continuous values such as elevation. In this example, the Biodiversity Intactness Index is a raster view in which every pixel has a continuous value.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/4.2-What-do-the-button-colours-mean.gif" alt="What do the button colors mean? GIF">
+                  <p>Conversely, vector data is data that represents linear or area features on a map, such as highways (lines), cities (points), or species range maps (polygons). Vector data will normally contain not just a feature on a map, but will also have other data associated with it called attribute data. Attributes can be many things, such as place names, the area of a feature, or other calculated or derived data that is associated with a feature. In this example, for each feature in the Ecoregions2017 dataset in UN Biodiversity Lab there is an attribute for that feature’s Ecoregion (a finer scale land classification), as well as its Biome (a more generalised land classification). Try comparing two datasets, one with a purple button and one with a green button.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/4.3-What-do-the-button-colours-mean.png" alt="What do the button colors mean?">
+                  <p>In addition, there are red buttons which denote an external geodatabase that is hosted on the UN Biodiversity Lab, such as the World Database on Protected Areas. Geodatabases are secure cloud-based spatial data containers, maintained by research institutions for spatial data that the UN Biodiversity Lab updates regularly. The World Database on Protected Areas is the largest database of legally defined protected areas on the planet. This data is updated every month.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How do I layer the views?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/5.1-How-do-I-layer-the-views.gif" alt="How do I layer the views? GIF">
+                  <p>You can use the arrows at the far left side of the View Toolbar, located beneath the legend in each view, to layer certain activated views over one another. The arrows on the far left side will move the view either to the top or the bottom of the current view legend. Use the “Filter Activated Views” button to clarify the order of your activated views.</p>
+                </div>
+              </li>
+              
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">The View Toolbar</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/6.1-The-view-toolbar.gif" alt="The View Toolbar GIF">
+                  <p>In this example, you can see the two View Toolbars highlighted differ slightly. That is because one is a raster and one is a vector. Vector data has slightly more functions available on the platform. For example, the vector toolbar has the buttons “Zoom to selected features” and “Zoom on displayed features” . These two buttons will help you display your selected features in the frame.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/6.2-The-view-toolbar.gif" alt="The View Toolbar GIF">
+                  <p>The “Settings” button in the View Toolbar can be used to select a range of values to display within the iframe and/or the transparency of the view. Some vector views that include a temporal range of data can be filtered using a time-slider.</p>
+                  <p>When you want to reset the settings back to nil, you can click the “reset” button.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/6.3-The-view-toolbar.gif" alt="The View Toolbar GIF">
+                  <p>The small <strong>i</strong> is the metadata button. This button will return information about the dataset, including the the data provider, and a link to retrieve the homepage of the source. The metadata of vector views will also include the data integrity score, which is assessed as a percentage.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How can I download the data?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/7-How-do-I-download-the-data.gif" alt="How can I download the data? GIF">
+                  <p>You can download vector data in several different formats for use in your own programs, including ESRI shapefiles, geoJSON, and KML. Currently, raster data cannot be downloaded. You cannot download any data if you are not logged in.  If you choose to clip the data to a certain country, your file will include all data that touches the country, both within and outside the boundaries. For now, creating a true clip - or spatial intersection - of the data within your country’s borders can only be done outside UN Biodiversity Lab using GIS software (ArcMap, QGIS, OpenJump, GDAL/OGR, etc.). If you need assistance with simplifying this process, please ask for assistance by contacting the support email address (<a href="mailto:support@unbiodiversitylab.org" title="Email the support team">support@unbiodiversitylab.org</a>).</p>
+
+                  <p>Once the download has finished, you will receive an email with a link to your data. Please note that, as some are protected under a view-only license, not all views are available for download. However, even if the data is not available to download, it is still possible to generate a map out of the view by taking a screenshot.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How do I make a map?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/8.1-How-do-I-make-a-map.gif" alt="How do I make a map? GIF">
+                  <p>Making maps is a critical element of using the UN Biodiversity Lab, and it can be done in two ways. Once you have the correct view in place, click the “Take a screenshot” button to automatically begin a download of a zip file to your computer. This zip file will contain 4 elements: 3 png’s with the scale, map, and legend, and 1 PDF with all of the elements combined.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/8.2-How-do-I-make-a-map.gif" alt="How do I make a map? GIF">
+                  <p>The PDF output is still in development, so for now we recommend arranging the elements yourself, on a program such as Powerpoint, to include into reports or publications.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/8.3-How-do-I-make-a-map.gif" alt="How do I make a map? GIF">
+                  <p>If you have multiple views visible, only the legend that you click “Take a Screenshot” underneath will be included in the zip file. You can take a screenshot of the others by using a selective screenshot tool on your computer such as the Windows Snipping Tool.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/8.4-How-do-I-make-a-map.gif" alt="How do I make a map? GIF">
+                  <p>You can lay aerial imagery on your map using the plane button. If you would simply like to take a screenshot of the view with no auxiliary information, you can click the print button along the top toolbar. An automatic download will begin of a PNG of only the map that is shown within the frame.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Sharing views</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/sharing-views.gif" alt="Sharing views GIF">
+                  <p>The share button is located in the view toolbar. You can choose which views or collections you would like to share, and whether you would like a direct link to the view within MapX, or an html code for an iframe (for a website or a blog). An iframe will essentially insert a frame into your online platform containing the view, so it can be viewed without leaving your website. You can adjust the width and height of the iframe within the code. There is also an option to tweet the view directly.</p>
+                  <p><em>Note: Sharing a direct link will direct the user to the UN Biodiversity Lab Project within the MapX platform only if they are already added to the project as an administrator, publisher, member, or registered user if the project is public. If the project is not public and the user is not already invited to join the project, the link will re-route the user to the MapX platform home page.</em></p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Reset bearing</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/9-Reset-Bearing.gif" alt="Reset bearing GIF">
+                  <p>Using the right click button on your mouse, you can distort the angle of your view. To reset this and re-orient the map to the north, use the reset bearing button.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Toolbox features</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/10.1-Toolbox-features.gif" alt="Toolbox features GIF">
+                  <p>The toolbox button in the top toolbar is where you can find additional tools, as well as customizing and styling options for your map. At the very bottom of the toolbox, under theme configuration, you can adjust the colours of your map, including the text, boundaries, and other elements which may come in useful when generating maps.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/10.2-toolbox-features.png" alt="Toolbox features">
+                  <p>The “Embed MapX” button has the same features and options as the “Share View” button in the View toolbar. Links can be returned as an iframe or a direct link to the view within MapX.</p>
+                  <img class="accordion__image" src="images/user-guide/data-catalogue/10.3-toolbox-features.gif" alt="Toolbox features GIF">
+                  <p>At the top of the toolbox, the “Area of Visible Features” button will return the values of the vector features (polygons) visible in your view. This will only work with vector data. The area calculation, in square kilometers, is the total area (land or sea) in the features that are visible within the frame of the map.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Overlap Analysis</a>
+                <div class="accordion__content slide">
+                  <p>Overlap analysis allows 6NR teams to measure and visualize the overlapping areas between two or more views. This tool is in development and will be complete in Fall 2018. In the meantime, we have a roster of vetted consultants that can help do customized analysis who speak English, French, and Spanish. Contact us for more information at <a href="mailto:support@unbiodiversitylab.org" title="Email the support team">support@unbiodiversitylab.org</a>.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="box--white">
+            <h2>6NR National Projects</h2>
+
+            <ul class="accordion">
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Project configuration</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/6nr/1.1-Project-Configuration.gif" alt="Project configuration GIF">
+                  <p>Only administrators have the ability to modify the settings and parameters of the 6NR national projects. To configure the settings of your project, navigate to “Project configuration”  in the Toolbox in order to set the description, initial position of the map, and user accessibility of your project.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/1.2-Project-Configuration.gif" alt="Project configuration GIF">
+                  <p><strong>Do not change the title of your project.</strong> You can change the description of your project which will be publicly viewable. To set the position of the map that your project will open to, click “Initial Map Position” and zoom in to the the chosen area and click “Use current map parameters.” You can highlight specific countries by selecting the country name(s) in the “Countries to be highlighted on the map” section. If it is not already set, this should be your 6NR country. If you would like your project to be public, check the box next to “This project is public.” This checkbox is important - it decides whether this project will be public or not. This means that your project can be searched by anyone under the “list of projects” and that views that have public access within it will be visible.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Invite Members and Define Roles</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/6nr/2.1-Invite-members-and-define-roles.gif" alt="Invite Members and Define Roles GIF">
+                  <p>In the toolbox, you can invite members to collaborate in your project and specify their user privileges. To invite people to collaborate on your project, click “Invite a new member” and enter the emails of people you would like to extend an invitation to. You can customize the message before sending it. New members should receive an email from the MapX bot immediately.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/2.2-Invite-members-and-define-roles.gif" alt="Invite Members and Define Roles GIF">
+                  <p>To define the user privileges of each member click “Define Roles” in the Project Configuration section of the toolbox to sort existing members to add to the publisher role. Each member will be able to see, use, and upload data in your project. Publishers can publish source layers and views for all members and can edit those that are available for “publisher” privileges. Administrators have the same authority as a publisher but can also change the status of others’ accounts and delete the project entirely. We recommend that each 6NR team only have one administrator.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How can I share a project?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/6nr/3-How-can-I-share-a-project.gif" alt="How can I share a project? GIF">
+                  <p>If you want to share a project that you are not an administrator or member of, click on the title of the project. If it is a public project, you can click on the “Share” button under any view. Check the “Set project” field and leave the rest blank. The link generated underneath will be a link to the whole project. You can share this link with your intended colleague, who can request to join the project by clicking on the name of the project in the top right hand corner of the list of the views.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How do I add views or delete views from my project?</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/6nr/4-Add-or-delete-views.gif" alt="How do I add views or delete views from my project? GIF">
+                  <p>Your 6NR .gifprojects are already pre-populated with views. If you would like to delete unnecessary views, navigate to the Toolbox within your project and select “Manage External Views” under “Project Configuration”. Delete the views you would like to remove.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/4.2-add-or-delete-views.gif" alt="How do I add views or delete views from my project? GIF"> 
+                  <p>If you accidentally delete a view that you would still like in your project, it is simple to add it back into your project. Navigate back to the Data Catalogue and find the view. Click the “Share” button beneath the view of your choice, and enter the name of your project(s) in the field and select “Add view to selected project(s)”. The save icon indicates that it has been sent to your project.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">How can I upload data?</a>
+                <div class="accordion__content slide">
+                  <p>Only vector data can be uploaded into the UN Biodiversity Lab projects. Raster data must be hosted from an external WMS - to learn more about <a href="https://www.mapx.org/knowledge-base/create-a-raster-or-vector-view-based-on-a-wms-request" target="_blank" title="Learn more about creating a WMS request">creating a WMS request</a>.</p>
+                  <p>In order to upload your own vector data, it must be compatible with an open source format. This means it must be a ESRI Shapefile, GeoJSON, GPX, or KML file. A GeoJSON format is recommended. If you are unsure, you can see if it is compatible by using an open source software such as QGIS. ESRI Shapefiles must be zipped. Zipped files must include must include the .shp, .shx, .dbf and .prj files.</p>
+                  <p>Once you are certain your data is in a compatible format, you can either upload your data by dragging and dropping if the file is less than 100 mb and a GEOJson, or manual upload if it is between 100 and 300 mb. We strongly suggest using the manual upload, as it is the most stable method of data upload.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Manual upload</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/6nr/5.1-Manual-upload.gif" alt="Manual upload GIF">
+                  <p>To add larger files (between 100-300 mb)  to your project, navigate to the Toolbox. Under Sources, click “Add a source layer”, and title your data. Find your file and click “Open”. When it is complete the dialogue will read “Upload done”.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/5.2-Manual-upload.gif" alt="Manual upload GIF">
+                  <p>Then, click “Edit Sources Metadata” to fill out the metadata for the entire dataset. At the very minimum, your source must include a title and abstract. Fill out contextual information about the entire dataset to the best of your ability, then click “Save” and “Ok”.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/5.3-manual-upload.gif" alt="Manual upload GIF">
+                  <p>Click “Manage Sources” to select which user groups have use and write access to the dataset. By adding a certain user group to write access, such as publishers, this means that publishers will be able to edit the source metadata and create views out of the data. Use means that particular group will be able to see the data and create a new view, but will not be able to edit the metadata.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/5.4-manual-upload.gif" alt="Manual upload GIF">
+                  <p>Click “Create a new view” to load your view into your project. Choose vector tile and click “Create”. This should automatically load your new data source into the view. Navigate to the view page and select the pencil button beneath your new view. Fill in the abstract for the view and click save to see your data.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/5.5-Manual-upload.gif" alt="Manual upload GIF">
+                  <p>Fill in all the available metadata that is relevant to the variable you are displaying out of the dataset. This will be viewable to all user groups you set in this dialogue. This includes a relevant abstract, temporal scale, and other attributes that will contribute to your data integrity score. Select which primary variable you would like to display. Secondary variables will appear in a pop-up when a feature is clicked.</p>
+                  <p>Your data is now in your project! Learn how to customize or style your data in the next walkthrough.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Drag and drop upload</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/6nr/6.1-dragging-and-dropping.gif" alt="Drag and drop upload GIF">
+                  <p>Dragging and dropping data into your project works best with GeoJSON files, which must be under 100mb. Within your project, drag and drop the file into the frame. You should be able to see your data immediately on the area of interest. The source data layer will appear in the view list with an orange button, indicating that it is a temporary view.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/6.2-drag-and-drop.gif" alt="Drag and drop upload GIF">
+                  <p>In order to finalize the data upload, click the cloud button underneath the dataset title. After this process completes, navigate to the toolbox and select “Edit Source Metadata”. Fill in the metadata for your entire dataset to the best of your ability - metadata is almost as important as the data itself. At the very minimum, you must include a title and an abstract, contained within the textual tab, in order to save your dataset. Click Save and Close when you are finished.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/6.3-drag-and-drop.gif" alt="Drag and drop upload GIF">
+                  <p>Still within the Toolbox, select “Create a New View” and select vector tile, name the view and click “Create”. Navigate back to the view list, where you will see your new view. It should automatically display a variable of the data source you saved.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/6.4-drag-and-drop.gif" alt="Drag and drop upload GIF">
+                  <p>Select the pencil button beneath your view. Fill in all the available metadata that is relevant to the variable you are displaying out of the dataset. This will be viewable to all user groups you set in this dialogue. Metadata such as date, source, and scale increase the integrity of the dataset for the user. Select which primary variable you would like to display. Click Save and you should see your new view on the map.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/6.5-drag-and-drop.gif" alt="Drag and drop upload GIF">
+                  <p><strong>You can now delete the original source data</strong> that you uploaded - it is now saved within your new view. Click the “Garbage can” icon beneath your data, which should have an orange button. Your view is now in the UN Biodiversity Lab and ready to be styled. Secondary variables will appear in a pop-up when a feature is clicked - these and the primary variables can be changed anytime by repeating the previous step.</p>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="#" class="accordion__trigger accordion-opener">Styling a vector view</a>
+                <div class="accordion__content slide">
+                  <img class="accordion__image" src="images/user-guide/6nr/7.1-vector-view.gif" alt="Styling a vector view GIF">
+                  <p>Once your data is inside your project, you will need to style the view of your data. Note that you can only style views that you have edit access for. Styling involves selecting the attributes you want to display, choosing the colors and the legend. We will walk you through each step. The first step will be selecting the variables you want to display. Click on the pencil button do to this. The source attributes will be what is displayed on the map. Secondary source variables will be returned in a pop-up when a feature is selected by the user on the map.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/7.2-vector-view.gif" alt="Styling a vector view GIF">
+                  <p>The second step of styling your view is creating a legend. Click the button with a paintbrush. Each separation in your legend will be called a rule. Create one rule for each separation of your data you want to create. The value input is the <strong>starting point</strong> for the rule. Click the “Ignore missing values” button in order to remove missing values from your legend.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/7.3-vector-view.gif" alt="Styling a vector view GIF">
+                  <p>You can style your legend using the various size and colour options, and move the labels up or down using the arrows at the end of the row. The label is what the field will be called in the legend. Clicking preview will help you visualize how your new legend and view will look as you experiment with your legend. Click save when you are satisfied with your legend.</p>
+                  <img class="accordion__image" src="images/user-guide/6nr/7.4-vector-view.gif" alt="Styling a vector view GIF">
+                  <p>You can also create rules with non-numerical data. If you want to separate values based on names, you can select the value window and choose from the drop-down menu whichever value you want. In these cases, each rule will only include the value that you select. You can also enter “all” if you wish to style all of your qualitative features the same way. If your data contains a large number of unique values, the value may not show up in the dropdown, rather start typing the name of the value you would like and it will come up in dropdown.</p>
+                  <p>Congratulations! You have now uploaded and styled your own data in the UN Biodiversity Lab. You can now compare it with existing data in the platform, use it in story maps, and share it with colleagues.</p>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer id="footer">
+    <div class="footer container flex flex-h-between flex-v-center">
+      <div>
+        <a href="/privacy-policy.html" title="View the Privacy Policy" class="footer__link">Privacy Policy</a>
+        <a href="/terms-of-use.html" title="View the Terms of Use" class="footer__link">Terms of Use</a>
+      </div>
+      <p class="no-margin">Copyright 2018 © United Nations</p>
+      <div>
+        <img src="images/logos/cbd-white.svg" alt="CBD Logo" class="footer__logo">
+        <img src="images/logos/gef-white.png" alt="GEF Logo" class="footer__logo">
+        <img src="images/logos/unep-white.svg" alt="UN Environment Logo" class="footer__logo">
+        <img src="images/logos/mapx-white.svg" alt="Powered by MapX Logo" class="footer__logo">
+        <img src="images/logos/undp-white.svg" alt="UNDP Logo" class="footer__logo">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

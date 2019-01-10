@@ -1,26 +1,22 @@
 #footer {
-	outline-style: groove;
-	display: table-footer-group;
-	height: 1%;
-	background:  #24262B;
+	background: #24262B;
 	color: $white;
-	text-align: center;
 
 	.footer {
-		padding: 20px;
+		padding: 0 20px;
+		height: $footer-height;
 
-		position: relative;
-
-		&__logo {
-			width: auto; height: 40px;
-			
-			position: absolute;
-			top: 12px;
-			right: 20px;
+		&__logo { 
+			margin-left: 18px;
+			width: auto; height: 36px; 
 		}
-	}
 
-	p {
-		margin: 0;
+		&__link { 
+			color: $white;
+			margin: 0 6px;
+			text-decoration: none;
+
+			&:hover { text-decoration: underline; }
+		}
 	}
 }

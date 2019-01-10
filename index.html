@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121873561-1"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121873561-1"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#24262b">
+    <meta name="theme-color" content="#24262b">
 
-<script>
+    <script>
 
-  window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-  function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);}
 
-  gtag('js', new Date());
+      gtag('js', new Date());
 
-  gtag('config', 'UA-121873561-1');
+      gtag('config', 'UA-121873561-1');
 
-</script>
+    </script>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=1270, initial-scale=1.0">
+    <meta name="description" content="The UN Biodiversity Lab provides a free, customized, online spatial analysis platform to support conservation and development decision-making around the globe.">
+    <meta name="keywords" content="UN Biodiversity Lab, conservation, biodiversity, 6NR, Sixth National Report, CBD, spatial">
 	<title>UNBiodiversity Lab</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link media="all" rel="stylesheet" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
@@ -31,19 +41,20 @@
 		<header id="header">
 			<div class="content-wrap">
 				<div class="logo-wrap">
-					<a href="index.html"><img src="images/logo.png" alt="UNBiodiversity Lab"></a>
+					<a href="index.html"><img src="images/logos/logo.png" alt="UNBiodiversity Lab"></a>
 				</div>
 				<nav id="nav">
 					<ul class="menu">
-						<li class="active"><a href="index.html">DATA CATALOGUE</a></li>
-						<li><a href="https://www.mapx.org/success-stories/">SUCCESS STORIES</a></li>
-						<li><a href="support.html">SUPPORT</a></li>
-						<li><a href="about.html">ABOUT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li class="active"><a href="index.html">DATA</a></li>
+                        <li><a href="https://www.mapx.org/success-stories/">STORIES</a></li>
+                        <li><a href="user-guide.html">USER GUIDE</a></li>
+                        <li><a href="support.html">SUPPORT</a></li>
 					</ul>
 				</nav>
 				<div class="right-block">
 					<div class="btn-wrap">
-						<a href="sandboxes.html" class="btn primary">My sandboxes</a>
+						<a href="projects.html" class="btn primary">My projects</a>
 					</div>
 					<!-- <div class="language-selector">
 						<span class="language-opener"><span class="language">English</span> <span class="icon-down"></span></span>
@@ -59,14 +70,17 @@
 				</div>
 			</div>
 		</header>
-		<main id="main">
-			<div id="content">
+		<main class="main">
+			<div class="content content--flex">
 				<div class="holder">
-					<iframe src="https://mvp.app.mapx.org/?lockProject=true&project=MX-XNI-RMZ-KKL-FMS-DVH&noViews=true"></iframe>
+					<iframe iframe src="https://app.mapx.org/?lockProject=true&project=MX-XNI-RMZ-KKL-FMS-DVH"></iframe>
 				</div>
 			</div>
-			<aside id="sidebar">
+			<aside class="sidebar">
 				<div class="sidebar-content">
+                    <a href="#" class="js-sidebar-opener sidebar-opener">
+                        <span class="icon-stack"></span>
+                    </a>
 					<form class="region-form" action="#">
 						<div class="input-wrap">
 							<select id="region">
@@ -217,79 +231,78 @@
                     <div class="sidebar-scroll">
     					<div class="title-wrap">
     						<span class="title">Apply Aichi Biodiversity Targets:</span>
-    						<a href="#" class="sidebar-opener"><span class="icon-stack"></span></a>
     					</div>
-                        <ul class="info-list accordion">
+                        <ul class="accordion accordion--sidebar">
                             <li class="accordion-item">
-                                <div class="accordion-item-trigger">
+                                <div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Aichi Biodiversity Target 5</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="ABT 5" data-selected="false" class="switch">
+                                        <a href="#" data-theme="ABT 5" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="slide">
+                                <div class="accordion__content slide">
                                     <div class="text">
                                         <p>Data related to halving the rate of loss of all natural habitats, and reducing the rate of their degradation and fragmentation.</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion-item">
-                                <div class="accordion-item-trigger">
+                                <div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Aichi Biodiversity Target 11</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="ABT 11" data-selected="false" class="switch">
+                                        <a href="#" data-theme="ABT 11" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="slide">
+                                <div class="accordion__content slide">
                                     <div class="text">
                                         <p>Data related to increasing protected areas and improving their connectivity, representativeness of all ecosystems.</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion-item">
-                                <div class="accordion-item-trigger">
+                                <div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Aichi Biodiversity Target 12</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="ABT 12" data-selected="false" class="switch">
+                                        <a href="#" data-theme="ABT 12" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="slide">
+                                <div class="accordion__content slide">
                                     <div class="text">
                                         <p>Data related to preventing the extinction and improving and sustaining the conservation status of known threatened species.</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion-item">
-                                <div class="accordion-item-trigger">
+                                <div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Aichi Biodiversity Target 14</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="ABT 14" data-selected="false" class="switch">
+                                        <a href="#" data-theme="ABT 14" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="slide">
+                                <div class="accordion__content slide">
                                     <div class="text">
                                         <p>Data related to restoring and safeguarding essential ecosystem services, including those that are related to water, livelihoods, and well-being.</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion-item">
-                                <div class="accordion-item-trigger">
+                                <div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Aichi Biodiversity Target 15</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="ABT 15" data-selected="false" class="switch">
+                                        <a href="#" data-theme="ABT 15" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="slide">
+                                <div class="accordion__content slide">
                                     <div class="text">
                                         <p>Data relating to restoring degraded ecosystems and enhancing ecosystem resilience to climate change.</p>
                                     </div>
@@ -298,154 +311,153 @@
                         </ul>
                         <div class="title-wrap">
                             <span class="title">Apply Themes:</span>
-                            <a href="#" class="sidebar-opener"><span class="icon-stack"></span></a>
                         </div>
-    					<ul class="info-list accordion">
+    					<ul class="accordion accordion--sidebar">
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Biodiversity</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Biodiversity" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Biodiversity" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data relating to the diversity of species and ecosystems. Datasets include not only species range maps, but also data on the land and seascapes which provide habitat for Earth's diversity of life.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Climate & Carbon</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Climate and Carbon" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Climate and Carbon" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data relating to climate, climate change, and carbon storage and sequestration.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-                                <div class="accordion-item-trigger">
+                                <div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Ecosystem Services</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Ecosystem Services" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Ecosystem Services" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data that captures the benefits and services that nature and biodiversity provides to human well-being.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Human Impact</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Human Impact" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Human Impact" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data that captures the impact of human development on the natural world and biodiversity, including built infrastructure, mining and extractive industries, and the Human Footprint.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Land Cover</a>
                                     <div class="toggle-wrap">
-                                        <a href="#"  data-theme="Land Cover" data-src="https://jquery.com" data-selected="false" class="switch">
+                                        <a href="#"  data-theme="Land Cover" data-src="https://jquery.com" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Datasets related to monitoring the status of terrestrial land cover, including forest cover and forest loss, wetlands, and land degradation and desertification.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Marine</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Marine" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Marine" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data that is unique to the marine realm. Datasets include habitat and species range data, marine pollution, and the marine Human Footprint.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Natural Hazards</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Natural Hazards" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Natural Hazards" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data relating to the risk and vulnerability of human populations to natural disasters.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Protected Areas</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Protected Areas" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Protected Areas" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data that captures the extent of official protected area networks. This includes data of protected area boundaries as well as data related to monitoring and performance of protected areas.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Restoration</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Restoration" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Restoration" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data relating to habitat and ecosystem restoration projects and potential.</p>
     								</div>
     							</div>
     						</li>
     						<li class="accordion-item">
-    							<div class="accordion-item-trigger">
+    							<div class="accordion__trigger">
                                     <a href="#" class="accordion-opener">Socio-Economic</a>
                                     <div class="toggle-wrap">
-                                        <a href="#" data-theme="Socio-Economic" data-selected="false" class="switch">
+                                        <a href="#" data-theme="Socio-Economic" data-selected="false" class="switch" toggle>
                                             <span class="slider round"></span>
                                         </a>
                                     </div>
                                 </div>
-    							<div class="slide">
+    							<div class="accordion__content slide">
     								<div class="text">
     									<p>Data relating to human and social condition, including population growth, food and water security, access to health care, gender, and education.</p>
     								</div>
@@ -456,27 +468,22 @@
 				</div>
 			</aside>
 		</main>
-		<div class="popup-holder">
-			<div id="popup1" class="popup">
-				<div class="content-holder">
-					<div class="info-wrap">
-						<div class="text">
-							<h2>Welcome to your sandbox </h2>
-							<p>Welcome to your Sandbox! Here you will have access to additional data layers, analytical tools, and the ability to upload data, download data, export and share your maps. Sandboxes can be created for each project you are working on. You can also invite or be invited to the sandboxes of colleagues for collaboration and co-design.</p>
-							<a href="#" class="btn" data-src="https://jquery.com">Start <span class="icon-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-	<footer id="footer">
-		<div class="footer">
-			<div class="container">
-				<p>Copyright 2018 © United Nations</p>
-        <img src="images/mapx-logo.png" alt="Powered by MapX" class="footer__logo">
-			</div>
-		</div>
-	</footer>
+    <footer id="footer">
+    <div class="footer container flex flex-h-between flex-v-center">
+      <div>
+        <a href="/privacy-policy.html" title="View the Privacy Policy" class="footer__link">Privacy Policy</a>
+        <a href="/terms-of-use.html" title="View the Terms of Use" class="footer__link">Terms of Use</a>
+      </div>
+      <p class="no-margin">Copyright 2018 © United Nations</p>
+      <div>
+        <img src="images/logos/cbd-white.svg" alt="CBD Logo" class="footer__logo">
+        <img src="images/logos/gef-white.png" alt="GEF Logo" class="footer__logo">
+        <img src="images/logos/unep-white.svg" alt="UN Environment Logo" class="footer__logo">
+        <img src="images/logos/mapx-white.svg" alt="Powered by MapX Logo" class="footer__logo">
+        <img src="images/logos/undp-white.svg" alt="UNDP Logo" class="footer__logo">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

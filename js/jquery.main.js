@@ -13,7 +13,7 @@ jQuery(function() {
 // Used to remove popup window asking if really want to lave when changing iframe URL
 window.onbeforeunload = null;
 
-window.base_url = 'https://mvp.app.mapx.org/?lockProject=true&';
+window.base_url = 'https://app.mapx.org/?lockProject=true&';
 window.country = 'MX-XNI-RMZ-KKL-FMS-DVH'
 window.themes = [];
 
@@ -30,7 +30,7 @@ function initOpenLighbox() {
 }
 
 function initIframeChange() {
-	var iframe = jQuery('#content iframe');
+	var iframe = jQuery('[iframe]');
 
 	jQuery('#region').on('change', function(){
 		window.country = jQuery(this).val();
@@ -48,7 +48,7 @@ function initIframeChange() {
 	});
 
 
-	jQuery('.info-list .switch').on('click', function(e){
+	jQuery('[toggle]').on('click', function(e){
 		e.preventDefault();
 		toggle = jQuery(this);
 		theme = toggle.attr('data-theme');
@@ -127,7 +127,7 @@ function initCustomForms() {
 function initMobileNav() {
 	jQuery('body').mobileNav({
 		menuActiveClass: 'sidebar-active',
-		menuOpener: '.sidebar-opener'
+		menuOpener: '.js-sidebar-opener'
 	});
 	jQuery('.language-selector').mobileNav({
 		menuActiveClass: 'active',
@@ -629,6 +629,10 @@ function initAccordion() {
 						data: this.$form.serialize(),
 						success: function() {
 							self.$form.addClass(self.options.successSendClass);
+              var redirect_url = self.$form.attr('data-redirect');
+              if (redirect_url !== null) {
+                window.location.href = redirect_url
+              }
 						}
 					});
 				}

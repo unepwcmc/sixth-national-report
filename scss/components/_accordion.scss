@@ -1,0 +1,122 @@
+//--------------------------------------------------
+// accordion
+//--------------------------------------------------
+.accordion {
+  background-color: #1c757d;
+  list-style: none;
+  padding: 0;
+
+//--------------------------------------------------
+// accordion item
+//--------------------------------------------------
+  &-item {
+    border-bottom: solid 1px rgba(151, 151, 151, .61);
+    color: $white;
+
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      @include animate(all,0.3s);
+      content: '';
+      width: 0;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    &:hover {
+      &:after {
+        background-color: darken(#1c757d, 10%);
+        width: 100%;
+        right: 0;
+      }
+    }
+
+    &--theme-2 {
+      background-color: #1c7c60; 
+
+      &:after { background-color: #1c7c60; }
+
+      &:hover:after { background-color: darken(#1c7c60, 10%); }
+    }
+  }
+
+    &__trigger {
+      color: $white;
+      padding: 16px 0 16px 18px;
+      text-decoration: none;
+      
+      display: block;
+
+      &:focus { outline: none; }
+
+    }
+
+    &__content {
+      background-color: darken(#1c757d, 10%);
+      color: $white;
+      font-size: 13px;
+      padding: 28px;
+      
+      p {
+        margin: 0 0 16px;
+      }
+
+      ul { margin-bottom: 14px; }
+
+      li { 
+        font-size: 13px; 
+
+        display: list-item;
+      }
+    }
+
+      &__image {
+        margin: 14px auto;
+      }
+
+//--------------------------------------------------
+// sidebar accordion
+//--------------------------------------------------
+  &--sidebar {
+    @include animate(all, 0.3s);
+    background-color: #1c757d;
+    margin-bottom: 26px 30px;
+
+    .sidebar-active & { background-color: #2186a2; }
+
+    .accordion {
+      &-item {
+        @include animate(all, 0.3s);
+        margin-right: 40px;
+
+        &:hover:after { background-color: darken(#2186a2, 10%); }
+
+        .sidebar-active & { margin-right: 0; }
+      }
+
+      &__trigger {
+        font-size: 15px;
+        padding: 0 66px 0 0;
+
+        .accordion-opener {
+          color: $white;
+          padding: 16px 0 16px 18px;
+          text-decoration: none;
+
+          display: block;
+        }
+      }
+
+      &__content {
+        background-color: darken(#2186a2, 10%);
+        padding: 13px 30px 22px 18px;
+      }
+    }
+  }
+
+}

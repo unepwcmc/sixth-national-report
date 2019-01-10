@@ -1,0 +1,22 @@
+//--------------------------------------------------
+// site structure
+//--------------------------------------------------
+%container {
+  margin: 0 auto;
+}
+
+.container {
+  &--small { 
+    @extend %container;
+    width: 548px 
+  }
+
+  &--medium { 
+    @extend %container;
+    width: 795px; 
+  }
+
+  &-padding {
+    padding: 80px 0;
+  }
+}

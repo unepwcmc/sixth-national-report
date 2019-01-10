@@ -1,5 +1,4 @@
 h2 {
-	font-size: 31px;
 	line-height: 1.3;
 	margin: 0 0 5px;
 	font-weight: 700;
@@ -83,14 +82,14 @@ h1 {
 	}
 }
 
-#main{
+.main{
 	width: 100%;
 	background: $white;
 	overflow: hidden;
 	position: relative;
-	min-height: calc(100vh - 82px - 59px);
+	min-height: calc(100vh - 82px - #{$footer-height});
 
-	#content{
+	.content{
 		padding-left: 25px;
 		width: 100%;
 		@include animate(all, 0.5s);
@@ -98,7 +97,7 @@ h1 {
 
 		>.holder   {
 			margin:0 0 0 15px;
-			height: calc(100vh - 82px - 59px);
+			height: calc(100vh - 82px - #{$footer-height});
 			position: relative;
 		}
 
@@ -120,7 +119,7 @@ h1 {
 	overflow: hidden;
 	overflow-y: auto;
 
-	.accordion-item {
+	.info-list__item {
 		display: block;
 		font-size: 15px;
 		display: block;
@@ -150,7 +149,7 @@ h1 {
 			}
 		}
 
-		.accordion-opener {
+		.info-list__a {
 			text-decoration: none;
 			padding: 16px 0 16px 18px;
 			color: $white;
@@ -158,30 +157,6 @@ h1 {
 
 			&:focus {
 				outline: none;
-			}
-		}
-
-		&.active {
-			.accordion-item {
-				border-color:rgba(#979797,0.61);
-			}
-
-			a {
-				border-color: transparent;
-				&:after {
-					width: 100%;
-					right: 0;
-				}
-
-				&:before {
-					content: '';
-					position: absolute;
-					top: -1px;
-					left: 0;
-					right: 0;
-					background: #156269;
-					height: 1px;
-				}
 			}
 		}
 	}
@@ -386,35 +361,6 @@ h1 {
 }
 
 .accordion {
-	li {
-
-		&.active {
-			.accordion-item {
-				background: #156269;
-			}
-		}
-	}
-
-	.slide {
-		background: #156269;
-		padding: 13px 30px 22px;
-		font-size: 	13px;
-		line-height: 1.45;
-		color: $white;
-
-		p {
-			margin: 0 0 16px;
-		}
-
-		ul { margin-bottom: 14px; }
-
-		li { 
-			font-size: 13px; 
-
-			display: list-item;
-		}
-	}
-
 	.layers-list {
 		@extend %listreset;
 

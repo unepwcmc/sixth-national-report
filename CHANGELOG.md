@@ -1,3 +1,8 @@
+### BETA v0.6 Release
+
+* Update support page text
+* Load all data views in the map by default
+
 ### BETA v0.5 Release
 
 **Amend content**
