@@ -41,7 +41,7 @@ function initIframeChange() {
       url += '&collections=' + window.themes + '&noViews=false';
     }
     else {
-      url += '&noViews=true';
+      url;
     }
 
 		iframe.attr('src', url);
@@ -74,7 +74,7 @@ function initIframeChange() {
       url += '&collections=' + collections + '&noViews=false';
     }
     else {
-      url += '&noViews=true'
+      url
     }
 
 		iframe.attr('src', url);
