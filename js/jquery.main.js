@@ -8,6 +8,7 @@ jQuery(function() {
 	initFormValidation();
 	initLanguage();
 	initIframeChange();
+	addDateToFooter();
 });
 
 // Used to remove popup window asking if really want to lave when changing iframe URL
@@ -17,6 +18,13 @@ window.base_url = 'https://app.mapx.org/?lockProject=true&';
 window.country = 'MX-XNI-RMZ-KKL-FMS-DVH'
 window.themes = [];
 
+var addDateToFooter = function() {
+	const year = new Date().getFullYear(),
+		dateWrapper = document.getElementById('js-current-year')
+
+	dateWrapper.innerHTML = year
+}
+	
 function initOpenLighbox() {
 	var elem = jQuery('#popup-on-load');
 	if( elem.length >= 1) {
