@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.2"
+# lock "3.8.2"
 
 set :application, "sixth-national-report"
 set :repo_url, "git@github.com:unepwcmc/sixth-national-report.git"
