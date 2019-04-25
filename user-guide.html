@@ -70,7 +70,7 @@
 
             <ul class="accordion">
               <li class="accordion-item">
-                <a href="#" class="accordion__trigger accordion-opener">How do I register or log-in?</a>
+                <a href="#" class="accordion__trigger accordion-opener" id="register">How do I register or log-in?</a>
                 <div class="accordion__content slide">
                   <img class="accordion__image" src="images/user-guide/data-catalogue/1-how-do-I-register-or-log-in.gif" alt="How do I register or log-in GIF">
                   <p>Before you begin exploring the data, register for the UN Biodiversity Lab.</p>
@@ -137,7 +137,7 @@
                   <p>You can use the arrows at the far left side of the View Toolbar, located beneath the legend in each view, to layer certain activated views over one another. The arrows on the far left side will move the view either to the top or the bottom of the current view legend. Use the “Filter Activated Views” button to clarify the order of your activated views.</p>
                 </div>
               </li>
-              
+
               <li class="accordion-item">
                 <a href="#" class="accordion__trigger accordion-opener">The View Toolbar</a>
                 <div class="accordion__content slide">
@@ -152,7 +152,7 @@
               </li>
 
               <li class="accordion-item">
-                <a href="#" class="accordion__trigger accordion-opener">How can I download the data?</a>
+                <a href="#" class="accordion__trigger accordion-opener" id="#download">How can I download the data?</a>
                 <div class="accordion__content slide">
                   <img class="accordion__image" src="images/user-guide/data-catalogue/7-How-do-I-download-the-data.gif" alt="How can I download the data? GIF">
                   <p>You can download vector data in several different formats for use in your own programs, including ESRI shapefiles, geoJSON, and KML. Currently, raster data cannot be downloaded. You cannot download any data if you are not logged in.  If you choose to clip the data to a certain country, your file will include all data that touches the country, both within and outside the boundaries. For now, creating a true clip - or spatial intersection - of the data within your country’s borders can only be done outside UN Biodiversity Lab using GIS software (ArcMap, QGIS, OpenJump, GDAL/OGR, etc.). If you need assistance with simplifying this process, please ask for assistance by contacting the support email address (<a href="mailto:support@unbiodiversitylab.org" title="Email the support team">support@unbiodiversitylab.org</a>).</p>
@@ -162,7 +162,7 @@
               </li>
 
               <li class="accordion-item">
-                <a href="#" class="accordion__trigger accordion-opener">How do I make a map?</a>
+                <a href="#" class="accordion__trigger accordion-opener" id="#makemap">How do I make a map?</a>
                 <div class="accordion__content slide">
                   <img class="accordion__image" src="images/user-guide/data-catalogue/8.1-How-do-I-make-a-map.gif" alt="How do I make a map? GIF">
                   <p>Making maps is a critical element of using the UN Biodiversity Lab, and it can be done in two ways. Once you have the correct view in place, click the “Take a screenshot” button to automatically begin a download of a zip file to your computer. This zip file will contain 4 elements: 3 png’s with the scale, map, and legend, and 1 PDF with all of the elements combined.</p>
@@ -212,13 +212,13 @@
               </li>
             </ul>
           </div>
-        
+
           <div class="box--white">
             <h2>6NR National Projects</h2>
 
             <ul class="accordion">
               <li class="accordion-item">
-                <a href="#" class="accordion__trigger accordion-opener">Project configuration</a>
+                <a href="#" class="accordion__trigger accordion-opener" id="#projectconfiguration">Project configuration</a>
                 <div class="accordion__content slide">
                   <img class="accordion__image" src="images/user-guide/6nr/1.1-Project-Configuration.gif" alt="Project configuration GIF">
                   <p>Only administrators have the ability to modify the settings and parameters of the 6NR national projects. To configure the settings of your project, navigate to “Project configuration”  in the Toolbox in order to set the description, initial position of the map, and user accessibility of your project.</p>
@@ -228,7 +228,7 @@
               </li>
 
               <li class="accordion-item">
-                <a href="#" class="accordion__trigger accordion-opener">Invite Members and Define Roles</a>
+                <a href="#" class="accordion__trigger accordion-opener" id="#invitemembers">Invite Members and Define Roles</a>
                 <div class="accordion__content slide">
                   <img class="accordion__image" src="images/user-guide/6nr/2.1-Invite-members-and-define-roles.gif" alt="Invite Members and Define Roles GIF">
                   <p>In the toolbox, you can invite members to collaborate in your project and specify their user privileges. To invite people to collaborate on your project, click “Invite a new member” and enter the emails of people you would like to extend an invitation to. You can customize the message before sending it. New members should receive an email from the MapX bot immediately.</p>
@@ -238,7 +238,7 @@
               </li>
 
               <li class="accordion-item">
-                <a href="#" class="accordion__trigger accordion-opener">How can I share a project?</a>
+                <a href="#" class="accordion__trigger accordion-opener" id="#shareproject">How can I share a project?</a>
                 <div class="accordion__content slide">
                   <img class="accordion__image" src="images/user-guide/6nr/3-How-can-I-share-a-project.gif" alt="How can I share a project? GIF">
                   <p>If you want to share a project that you are not an administrator or member of, click on the title of the project. If it is a public project, you can click on the “Share” button under any view. Check the “Set project” field and leave the rest blank. The link generated underneath will be a link to the whole project. You can share this link with your intended colleague, who can request to join the project by clicking on the name of the project in the top right hand corner of the list of the views.</p>
@@ -250,13 +250,13 @@
                 <div class="accordion__content slide">
                   <img class="accordion__image" src="images/user-guide/6nr/4-Add-or-delete-views.gif" alt="How do I add views or delete views from my project? GIF">
                   <p>Your 6NR .gifprojects are already pre-populated with views. If you would like to delete unnecessary views, navigate to the Toolbox within your project and select “Manage External Views” under “Project Configuration”. Delete the views you would like to remove.</p>
-                  <img class="accordion__image" src="images/user-guide/6nr/4.2-add-or-delete-views.gif" alt="How do I add views or delete views from my project? GIF"> 
+                  <img class="accordion__image" src="images/user-guide/6nr/4.2-add-or-delete-views.gif" alt="How do I add views or delete views from my project? GIF">
                   <p>If you accidentally delete a view that you would still like in your project, it is simple to add it back into your project. Navigate back to the Data Catalogue and find the view. Click the “Share” button beneath the view of your choice, and enter the name of your project(s) in the field and select “Add view to selected project(s)”. The save icon indicates that it has been sent to your project.</p>
                 </div>
               </li>
 
               <li class="accordion-item">
-                <a href="#" class="accordion__trigger accordion-opener">How can I upload data?</a>
+                <a href="#" class="accordion__trigger accordion-opener" id="#uploaddata">How can I upload data?</a>
                 <div class="accordion__content slide">
                   <p>Only vector data can be uploaded into the UN Biodiversity Lab projects. Raster data must be hosted from an external WMS - to learn more about <a href="https://www.mapx.org/knowledge-base/create-a-raster-or-vector-view-based-on-a-wms-request" target="_blank" title="Learn more about creating a WMS request">creating a WMS request</a>.</p>
                   <p>In order to upload your own vector data, it must be compatible with an open source format. This means it must be a ESRI Shapefile, GeoJSON, GPX, or KML file. A GeoJSON format is recommended. If you are unsure, you can see if it is compatible by using an open source software such as QGIS. ESRI Shapefiles must be zipped. Zipped files must include must include the .shp, .shx, .dbf and .prj files.</p>
